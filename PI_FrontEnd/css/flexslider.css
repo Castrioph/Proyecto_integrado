@@ -1,3 +1,4 @@
+/*
 @font-face {
   font-family: 'FontAwesome';
   src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
@@ -241,13 +242,14 @@ body{
 div.barra{
     background-color: #ffffff;
     padding: 20px 0;
+
 }
 
 div.logo{
     width: 80%;
     float: left;
-    
-    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.70);   
+
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.70);
 }
 
 div.logo img {
