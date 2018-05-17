@@ -16,98 +16,98 @@
 CREATE DATABASE IF NOT EXISTS `proyectointegrado` /*!40100 DEFAULT CHARACTER SET ucs2 COLLATE ucs2_spanish_ci */;
 USE `proyectointegrado`;
 
--- Volcando estructura para tabla proyectointegrado.categorías
-CREATE TABLE IF NOT EXISTS `categorías` (
-  `Id_categorías` int(11) NOT NULL AUTO_INCREMENT,
-  `Nombre` varchar(50) COLLATE ucs2_spanish_ci DEFAULT NULL,
-  PRIMARY KEY (`Id_categorías`)
+-- Volcando estructura para tabla proyectointegrado.categorias
+CREATE TABLE IF NOT EXISTS `categorias` (
+  `id_categorias` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(50) COLLATE ucs2_spanish_ci DEFAULT NULL,
+  PRIMARY KEY (`id_categorias`)
 ) ENGINE=InnoDB DEFAULT CHARSET=ucs2 COLLATE=ucs2_spanish_ci;
 
 -- La exportación de datos fue deseleccionada.
 -- Volcando estructura para tabla proyectointegrado.comentarios
 CREATE TABLE IF NOT EXISTS `comentarios` (
-  `Id_comentarios` int(11) NOT NULL AUTO_INCREMENT,
-  `Id_videos` int(11) DEFAULT NULL,
-  `Comentarios` varchar(50) COLLATE ucs2_spanish_ci DEFAULT NULL,
-  PRIMARY KEY (`Id_comentarios`),
-  KEY `FK_comentarios_videos` (`Id_videos`),
-  CONSTRAINT `FK_comentarios_videos` FOREIGN KEY (`Id_videos`) REFERENCES `videos` (`Id_videos`)
+  `id_comentarios` int(11) NOT NULL AUTO_INCREMENT,
+  `id_videos` int(11) DEFAULT NULL,
+  `comentarios` varchar(50) COLLATE ucs2_spanish_ci DEFAULT NULL,
+  PRIMARY KEY (`id_comentarios`),
+  KEY `FK_comentarios_videos` (`id_videos`),
+  CONSTRAINT `FK_comentarios_videos` FOREIGN KEY (`id_videos`) REFERENCES `videos` (`Id_videos`)
 ) ENGINE=InnoDB DEFAULT CHARSET=ucs2 COLLATE=ucs2_spanish_ci;
 
 -- La exportación de datos fue deseleccionada.
 -- Volcando estructura para tabla proyectointegrado.foro
 CREATE TABLE IF NOT EXISTS `foro` (
-  `Id_foro` int(11) NOT NULL AUTO_INCREMENT,
-  PRIMARY KEY (`Id_foro`)
+  `id_foro` int(11) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`id_foro`)
 ) ENGINE=InnoDB DEFAULT CHARSET=ucs2 COLLATE=ucs2_spanish_ci;
 
 -- La exportación de datos fue deseleccionada.
 -- Volcando estructura para tabla proyectointegrado.live
 CREATE TABLE IF NOT EXISTS `live` (
-  `Id_live` int(11) NOT NULL AUTO_INCREMENT,
-  `Id_categorias` int(11) DEFAULT NULL,
-  `Nombre` varchar(50) COLLATE ucs2_spanish_ci DEFAULT NULL,
-  PRIMARY KEY (`Id_live`),
-  KEY `FK_live_categorías` (`Id_categorias`),
-  CONSTRAINT `FK_live_categorías` FOREIGN KEY (`Id_categorias`) REFERENCES `categorías` (`Id_categorías`)
+  `id_live` int(11) NOT NULL AUTO_INCREMENT,
+  `id_categorias` int(11) DEFAULT NULL,
+  `nombre` varchar(50) COLLATE ucs2_spanish_ci DEFAULT NULL,
+  PRIMARY KEY (`id_live`),
+  KEY `FK_live_categorías` (`id_categorias`),
+  CONSTRAINT `FK_live_categorías` FOREIGN KEY (`id_categorias`) REFERENCES `categorias` (`Id_categorias`)
 ) ENGINE=InnoDB DEFAULT CHARSET=ucs2 COLLATE=ucs2_spanish_ci;
 
 -- La exportación de datos fue deseleccionada.
 -- Volcando estructura para tabla proyectointegrado.mensajes
 CREATE TABLE IF NOT EXISTS `mensajes` (
-  `Id_mensajes` int(11) NOT NULL AUTO_INCREMENT,
-  `Id_sección` int(11) DEFAULT NULL,
-  `Contenido` varchar(50) COLLATE ucs2_spanish_ci DEFAULT NULL,
-  `Valoración` int(11) DEFAULT NULL,
-  PRIMARY KEY (`Id_mensajes`),
-  KEY `FK_mensajes_sección` (`Id_sección`),
-  CONSTRAINT `FK_mensajes_sección` FOREIGN KEY (`Id_sección`) REFERENCES `sección` (`Id_sección`)
+  `id_mensajes` int(11) NOT NULL AUTO_INCREMENT,
+  `id_seccion` int(11) DEFAULT NULL,
+  `contenido` varchar(50) COLLATE ucs2_spanish_ci DEFAULT NULL,
+  `valoracion` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id_mensajes`),
+  KEY `FK_mensajes_sección` (`id_seccion`),
+  CONSTRAINT `FK_mensajes_sección` FOREIGN KEY (`id_seccion`) REFERENCES `seccion` (`id_seccion`)
 ) ENGINE=InnoDB DEFAULT CHARSET=ucs2 COLLATE=ucs2_spanish_ci;
 
 -- La exportación de datos fue deseleccionada.
 -- Volcando estructura para tabla proyectointegrado.pago
 CREATE TABLE IF NOT EXISTS `pago` (
-  `Id_pago` int(11) NOT NULL AUTO_INCREMENT,
-  `Nombre` varchar(50) COLLATE ucs2_spanish_ci DEFAULT NULL,
-  PRIMARY KEY (`Id_pago`)
+  `id_pago` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(50) COLLATE ucs2_spanish_ci DEFAULT NULL,
+  PRIMARY KEY (`id_pago`)
 ) ENGINE=InnoDB DEFAULT CHARSET=ucs2 COLLATE=ucs2_spanish_ci;
 
 -- La exportación de datos fue deseleccionada.
--- Volcando estructura para tabla proyectointegrado.sección
-CREATE TABLE IF NOT EXISTS `sección` (
-  `Id_sección` int(11) NOT NULL AUTO_INCREMENT,
-  `Id_foro` int(11) DEFAULT NULL,
-  `Nombre` varchar(50) COLLATE ucs2_spanish_ci DEFAULT NULL,
-  PRIMARY KEY (`Id_sección`),
-  KEY `FK_sección_foro` (`Id_foro`),
-  CONSTRAINT `FK_sección_foro` FOREIGN KEY (`Id_foro`) REFERENCES `foro` (`Id_foro`)
+-- Volcando estructura para tabla proyectointegrado.seccion
+CREATE TABLE IF NOT EXISTS `seccion` (
+  `id_seccion` int(11) NOT NULL AUTO_INCREMENT,
+  `id_foro` int(11) DEFAULT NULL,
+  `nombre` varchar(50) COLLATE ucs2_spanish_ci DEFAULT NULL,
+  PRIMARY KEY (`id_seccion`),
+  KEY `FK_sección_foro` (`id_foro`),
+  CONSTRAINT `FK_sección_foro` FOREIGN KEY (`id_foro`) REFERENCES `foro` (`Id_foro`)
 ) ENGINE=InnoDB DEFAULT CHARSET=ucs2 COLLATE=ucs2_spanish_ci;
 
 -- La exportación de datos fue deseleccionada.
 -- Volcando estructura para tabla proyectointegrado.usuario
 CREATE TABLE IF NOT EXISTS `usuario` (
-  `Usuario` varchar(50) COLLATE ucs2_spanish_ci DEFAULT NULL,
-  `Password` varchar(50) COLLATE ucs2_spanish_ci DEFAULT NULL,
-  `Pago_id` int(11) DEFAULT NULL,
-  `Id_usuario` int(11) NOT NULL AUTO_INCREMENT,
-  PRIMARY KEY (`Id_usuario`),
-  KEY `FK_usuario_pago` (`Pago_id`),
-  CONSTRAINT `FK_usuario_pago` FOREIGN KEY (`Pago_id`) REFERENCES `pago` (`Id_pago`)
+  `usuario` varchar(50) COLLATE ucs2_spanish_ci DEFAULT NULL,
+  `password` varchar(50) COLLATE ucs2_spanish_ci DEFAULT NULL,
+  `pago_id` int(11) DEFAULT NULL,
+  `id_usuario` int(11) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`id_usuario`),
+  KEY `FK_usuario_pago` (`pago_id`),
+  CONSTRAINT `FK_usuario_pago` FOREIGN KEY (`pago_id`) REFERENCES `pago` (`Id_pago`)
 ) ENGINE=InnoDB DEFAULT CHARSET=ucs2 COLLATE=ucs2_spanish_ci;
 
 -- La exportación de datos fue deseleccionada.
 -- Volcando estructura para tabla proyectointegrado.videos
 CREATE TABLE IF NOT EXISTS `videos` (
-  `Id_videos` int(11) NOT NULL AUTO_INCREMENT,
-  `Id_comentarios` int(11) NOT NULL DEFAULT '0',
-  `Id_categorias` int(11) DEFAULT NULL,
-  `Puntuación` int(11) DEFAULT NULL,
-  `Título` varchar(50) COLLATE ucs2_spanish_ci DEFAULT NULL,
-  `Fecha` date DEFAULT NULL,
-  PRIMARY KEY (`Id_videos`),
-  KEY `FK_videos_categorías` (`Id_categorias`),
-  KEY `FK_videos_comentarios` (`Id_comentarios`),
-  CONSTRAINT `FK_videos_categorías` FOREIGN KEY (`Id_categorias`) REFERENCES `categorías` (`Id_categorías`)
+  `id_videos` int(11) NOT NULL AUTO_INCREMENT,
+  `id_comentarios` int(11) NOT NULL DEFAULT '0',
+  `id_categorias` int(11) DEFAULT NULL,
+  `puntuacion` int(11) DEFAULT NULL,
+  `titulo` varchar(50) COLLATE ucs2_spanish_ci DEFAULT NULL,
+  `fecha` date DEFAULT NULL,
+  PRIMARY KEY (`id_videos`),
+  KEY `FK_videos_comentarios` (`id_comentarios`),
+  KEY `FK_videos_categorías` (`id_categorias`),
+  CONSTRAINT `FK_videos_categorías` FOREIGN KEY (`id_categorias`) REFERENCES `categorias` (`Id_categorias`)
 ) ENGINE=InnoDB DEFAULT CHARSET=ucs2 COLLATE=ucs2_spanish_ci;
 
 -- La exportación de datos fue deseleccionada.
