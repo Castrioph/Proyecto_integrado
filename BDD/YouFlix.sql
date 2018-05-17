@@ -76,7 +76,7 @@ CREATE TABLE IF NOT EXISTS `sección` (
 -- Volcando estructura para tabla proyectointegrado.usuario
 CREATE TABLE IF NOT EXISTS `usuario` (
   `Usuario` varchar(50) COLLATE ucs2_spanish_ci DEFAULT NULL,
-  `Contraseña` varchar(50) COLLATE ucs2_spanish_ci DEFAULT NULL,
+  `Password` varchar(50) COLLATE ucs2_spanish_ci DEFAULT NULL,
   `Pago_id` int(11) DEFAULT NULL,
   `Id_usuario` int(11) NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`Id_usuario`),
