@@ -24,6 +24,17 @@ CREATE TABLE IF NOT EXISTS `categorías` (
 ) ENGINE=InnoDB DEFAULT CHARSET=ucs2 COLLATE=ucs2_spanish_ci;
 
 -- La exportación de datos fue deseleccionada.
+-- Volcando estructura para tabla proyectointegrado.comentarios
+CREATE TABLE IF NOT EXISTS `comentarios` (
+  `Id_comentarios` int(11) NOT NULL AUTO_INCREMENT,
+  `Id_videos` int(11) DEFAULT NULL,
+  `Comentarios` varchar(50) COLLATE ucs2_spanish_ci DEFAULT NULL,
+  PRIMARY KEY (`Id_comentarios`),
+  KEY `FK_comentarios_videos` (`Id_videos`),
+  CONSTRAINT `FK_comentarios_videos` FOREIGN KEY (`Id_videos`) REFERENCES `videos` (`Id_videos`)
+) ENGINE=InnoDB DEFAULT CHARSET=ucs2 COLLATE=ucs2_spanish_ci;
+
+-- La exportación de datos fue deseleccionada.
 -- Volcando estructura para tabla proyectointegrado.foro
 CREATE TABLE IF NOT EXISTS `foro` (
   `Id_foro` int(11) NOT NULL AUTO_INCREMENT,
@@ -88,13 +99,14 @@ CREATE TABLE IF NOT EXISTS `usuario` (
 -- Volcando estructura para tabla proyectointegrado.videos
 CREATE TABLE IF NOT EXISTS `videos` (
   `Id_videos` int(11) NOT NULL AUTO_INCREMENT,
+  `Id_comentarios` int(11) NOT NULL DEFAULT '0',
   `Id_categorias` int(11) DEFAULT NULL,
-  `Comentarios` varchar(50) COLLATE ucs2_spanish_ci DEFAULT NULL,
   `Puntuación` int(11) DEFAULT NULL,
   `Título` varchar(50) COLLATE ucs2_spanish_ci DEFAULT NULL,
   `Fecha` date DEFAULT NULL,
   PRIMARY KEY (`Id_videos`),
   KEY `FK_videos_categorías` (`Id_categorias`),
+  KEY `FK_videos_comentarios` (`Id_comentarios`),
   CONSTRAINT `FK_videos_categorías` FOREIGN KEY (`Id_categorias`) REFERENCES `categorías` (`Id_categorías`)
 ) ENGINE=InnoDB DEFAULT CHARSET=ucs2 COLLATE=ucs2_spanish_ci;
 
