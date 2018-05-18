@@ -24,8 +24,22 @@ foreach ($resultado as $fila)
   echo "Título: ".$fila["Titulo"]."<br>";
   echo "Descripción: ".$fila["Descripcion"]."<br>";
   echo "Puntuación: ".$fila["Puntuacion"]."<br>";
+<<<<<<< HEAD
   echo "Fecha: ".$fila["Fecha"]."<br><br>";
 }
   ?>
+=======
+  echo "Fecha: ".$fila["Fecha"]."<br>";
+?>
+<form class="" action="insertarComent.php" method="post" onsubmit="return validar()">
+      <input type="text" name="Comentarios" id="Coment" value="Perra Comenta..." onFocus="this.value=''"><br>
+      <input type="hidden" name="id_videos" value="<?= $_GET["id_videos"]?>">
+      <br><br>
+</form>
+<?php
+echo "<a href='videos.php?id=".$fila['Titulo']."'>Comentar</a> <br> <br>";
+}
+ ?>
+>>>>>>> master
   </body>
 </html>
