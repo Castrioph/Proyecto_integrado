@@ -61,7 +61,7 @@ CREATE TABLE IF NOT EXISTS `mensajes` (
   `valoracion` int(11) DEFAULT NULL,
   PRIMARY KEY (`id_mensajes`),
   KEY `FK_mensajes_sección` (`id_seccion`),
-  CONSTRAINT `FK_mensajes_sección` FOREIGN KEY (`id_seccion`) REFERENCES `seccion` (`id_seccion`)
+  CONSTRAINT `FK_mensajes_sección` FOREIGN KEY (`Id_sección`) REFERENCES `seccion` (`id_seccion`)
 ) ENGINE=InnoDB DEFAULT CHARSET=ucs2 COLLATE=ucs2_spanish_ci;
 
 -- La exportación de datos fue deseleccionada.
@@ -104,6 +104,7 @@ CREATE TABLE IF NOT EXISTS `videos` (
   `puntuacion` int(11) DEFAULT NULL,
   `titulo` varchar(50) COLLATE ucs2_spanish_ci DEFAULT NULL,
   `fecha` date DEFAULT NULL,
+  `url_video` varchar(50) COLLATE ucs2_spanish_ci NOT NULL,
   PRIMARY KEY (`id_videos`),
   KEY `FK_videos_comentarios` (`id_comentarios`),
   KEY `FK_videos_categorías` (`id_categorias`),
