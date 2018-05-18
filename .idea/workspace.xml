@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aff35ffa-325f-44a9-ad49-92f86720a660" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/YouFlix/public/images/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/YouFlix/public/js/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/YouFlix/composer.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,15 +23,31 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name=".gitkeep" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitkeep" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/YouFlix/public/js/.gitkeep">
           <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="composer.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/YouFlix/composer.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/YouFlix/composer.json" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -65,45 +79,6 @@
               <item name="repositorio_proyecto" type="b2602c69:ProjectViewProjectNode" />
               <item name="repositorio_proyecto" type="462c0819:PsiDirectoryNode" />
               <item name="YouFlix" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="repositorio_proyecto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="repositorio_proyecto" type="462c0819:PsiDirectoryNode" />
-              <item name="YouFlix" type="462c0819:PsiDirectoryNode" />
-              <item name="log" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="repositorio_proyecto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="repositorio_proyecto" type="462c0819:PsiDirectoryNode" />
-              <item name="YouFlix" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="repositorio_proyecto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="repositorio_proyecto" type="462c0819:PsiDirectoryNode" />
-              <item name="YouFlix" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="repositorio_proyecto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="repositorio_proyecto" type="462c0819:PsiDirectoryNode" />
-              <item name="YouFlix" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="repositorio_proyecto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="repositorio_proyecto" type="462c0819:PsiDirectoryNode" />
-              <item name="YouFlix" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="repositorio_proyecto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="repositorio_proyecto" type="462c0819:PsiDirectoryNode" />
-              <item name="YouFlix" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -140,15 +115,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526634985362</updated>
-      <workItem from="1526634986803" duration="262000" />
+      <workItem from="1526634986803" duration="504000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="262000" />
+    <option name="totallyTimeSpent" value="504000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info id="DB Browser" />
@@ -194,6 +170,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/YouFlix/public/js/.gitkeep">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/YouFlix/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
