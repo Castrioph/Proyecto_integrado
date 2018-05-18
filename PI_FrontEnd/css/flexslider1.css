@@ -305,9 +305,6 @@ nav.navegacion-principal a:last-child:hover{
     color: #ffffff;
 }
 
-.flexslider:hover{
-  slideshowSpeed : 0;
-}
 @media only screen and (min-width:768px){
     nav.navegacion-principal{
         width: 67%;
