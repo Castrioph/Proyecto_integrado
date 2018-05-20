@@ -1,0 +1,3 @@
+parte clara: #e40b13
+parte oscura: #c9030d
+parte de la linea: #680103
