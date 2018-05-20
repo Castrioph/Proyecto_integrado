@@ -2,33 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aff35ffa-325f-44a9-ad49-92f86720a660" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/YouFlix/public/css/flexslider.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/YouFlix/public/css/flexslider1.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/YouFlix/public/css/font-awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/YouFlix/public/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/YouFlix/public/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/YouFlix/public/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/YouFlix/public/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/YouFlix/public/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/YouFlix/public/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/YouFlix/public/images/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/YouFlix/public/images/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/YouFlix/public/images/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/YouFlix/public/images/Colores_de_logo.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/YouFlix/public/images/YOUFLIXFINALOGO.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/YouFlix/public/images/YfINALOGO.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/YouFlix/public/images/YouFlix.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/YouFlix/public/images/YouflixLogo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/YouFlix/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/YouFlix/public/insertarComent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/YouFlix/public/js/jquery-3.1.0.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/YouFlix/public/js/jquery.flexslider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/YouFlix/public/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/YouFlix/public/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/YouFlix/public/videos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/repositorio_proyecto.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/repositorio_proyecto.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PI_FrontEnd/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/PI_FrontEnd/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YouFlix/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/YouFlix/public/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,45 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PI_FrontEnd/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="547">
-              <caret line="101" column="6" selection-start-line="101" selection-start-column="6" selection-end-line="101" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/YouFlix/public/index.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="1.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PI_FrontEnd/img/1.jpg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file leaf-file-name="flexslider1.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/YouFlix/public/css/flexslider1.css">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="jquery.flexslider.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/YouFlix/public/js/jquery.flexslider.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="insertarComent.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PI_FrontEnd/insertarComent.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="insertarComent.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/YouFlix/public/insertarComent.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="1428">
+              <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
             </state>
           </provider>
         </entry>
@@ -96,6 +37,7 @@
         <option value="$PROJECT_DIR$/YouFlix/composer.json" />
         <option value="$PROJECT_DIR$/PI_FrontEnd/index.html" />
         <option value="$PROJECT_DIR$/YouFlix/public/insertarComent.php" />
+        <option value="$PROJECT_DIR$/YouFlix/public/index.html" />
       </list>
     </option>
   </component>
@@ -135,17 +77,6 @@
             <path>
               <item name="repositorio_proyecto" type="b2602c69:ProjectViewProjectNode" />
               <item name="repositorio_proyecto" type="462c0819:PsiDirectoryNode" />
-              <item name="PI_FrontEnd" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="repositorio_proyecto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="repositorio_proyecto" type="462c0819:PsiDirectoryNode" />
-              <item name="PI_FrontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="repositorio_proyecto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="repositorio_proyecto" type="462c0819:PsiDirectoryNode" />
               <item name="YouFlix" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -165,6 +96,14 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\DAW\Proyecto_integrado\repositorio_proyecto\YouFlix\public" />
+      <recent name="C:\xampp\htdocs\DAW\Proyecto_integrado\repositorio_proyecto\YouFlix\public\js" />
+      <recent name="C:\xampp\htdocs\DAW\Proyecto_integrado\repositorio_proyecto\YouFlix\public\css" />
+      <recent name="C:\xampp\htdocs\DAW\Proyecto_integrado\repositorio_proyecto\YouFlix\public\images" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -190,12 +129,12 @@
       <updated>1526634985362</updated>
       <workItem from="1526634986803" duration="2234000" />
       <workItem from="1526850589790" duration="88000" />
-      <workItem from="1526850856053" duration="1345000" />
+      <workItem from="1526850856053" duration="1827000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3667000" />
+    <option name="totallyTimeSpent" value="4149000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -277,9 +216,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/YouFlix/public/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/PI_FrontEnd/img/1.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -290,12 +226,23 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/PI_FrontEnd/insertarComent.php">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" selection-end-line="27" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/YouFlix/public/insertarComent.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="-14">
+          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/YouFlix/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1428">
+          <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
         </state>
       </provider>
     </entry>
