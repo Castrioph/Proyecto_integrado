@@ -296,6 +296,10 @@ nav.navegacion-principal a{
 nav.navegacion-principal a:hover{
     background-color: #ebebeb;
 }
+    
+nav.navegacion-principal .logeado{
+    float: right;        
+}
 
 nav.navegacion-principal .logeado a:last-child{
     border: 2px solid #000000;
@@ -344,6 +348,7 @@ nav.navegacion-principal .logeado a:last-child:hover{
     left: 10px;
     float: left;
     line-height: 22px;
+    margin-left: 36%;
 }
 
 .busqueda input {
@@ -360,10 +365,10 @@ nav.navegacion-principal .logeado a:last-child:hover{
     padding: 0 2px 0 2px;
     border-radius:1px;
 }
-
+    
 .busqueda:hover input, .busqueda input:focus {
     width: 200px;
-    margin-left: 0px;
+    margin-left: 0;
 }
 
 .btn {
@@ -374,7 +379,10 @@ nav.navegacion-principal .logeado a:last-child:hover{
     border-radius:1px;
 }
 
-    
+button.btn.btn-primary.btn-sm{
+    background-color: #ebebeb;
+    color: #000000;
+}
 
 /*     clearfix    */
 
