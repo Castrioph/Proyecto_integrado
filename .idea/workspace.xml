@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aff35ffa-325f-44a9-ad49-92f86720a660" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YouFlix/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/YouFlix/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YouFlix/public/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/YouFlix/public/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YouFlix/public/videos.php" beforeDir="false" afterPath="$PROJECT_DIR$/YouFlix/public/videos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YouFlix/public/css/flexslider.css" beforeDir="false" afterPath="$PROJECT_DIR$/YouFlix/public/css/flexslider.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,20 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/YouFlix/public/index.html">
+      <file leaf-file-name="flexslider.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/YouFlix/public/css/flexslider.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="34" selection-start-line="8" selection-end-line="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/YouFlix/public/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="479">
-              <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+            <state relative-caret-position="306">
+              <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -56,6 +44,7 @@
         <option value="$PROJECT_DIR$/YouFlix/public/videos.php" />
         <option value="$PROJECT_DIR$/YouFlix/public/index.html" />
         <option value="$PROJECT_DIR$/YouFlix/public/login.html" />
+        <option value="$PROJECT_DIR$/YouFlix/public/css/flexslider.css" />
       </list>
     </option>
   </component>
@@ -101,6 +90,13 @@
               <item name="repositorio_proyecto" type="462c0819:PsiDirectoryNode" />
               <item name="YouFlix" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="repositorio_proyecto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="repositorio_proyecto" type="462c0819:PsiDirectoryNode" />
+              <item name="YouFlix" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="repositorio_proyecto" type="b2602c69:ProjectViewProjectNode" />
@@ -168,12 +164,12 @@
       <workItem from="1526634986803" duration="2234000" />
       <workItem from="1526850589790" duration="88000" />
       <workItem from="1526850856053" duration="2369000" />
-      <workItem from="1526885867918" duration="2976000" />
+      <workItem from="1526885867918" duration="3679000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7667000" />
+    <option name="totallyTimeSpent" value="8370000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -296,6 +292,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/YouFlix/public/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/YouFlix/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -303,10 +306,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/YouFlix/public/login.html">
+    <entry file="file://$PROJECT_DIR$/YouFlix/public/css/flexslider.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+        <state relative-caret-position="306">
+          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
         </state>
       </provider>
     </entry>
