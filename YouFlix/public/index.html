@@ -1,85 +1,81 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>YOUFLIX</title>
+	<title>Slider Responsive 2017</title>
 
 	<link rel="stylesheet" href="css/flexslider.css">
 	<link rel="stylesheet" href="css/font-awesome.css">
+	
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
 	<script src="js/jquery-3.1.0.min.js"></script>
 	<script src="js/jquery.flexslider.js"></script>
 	<script src="js/main.js"></script>
 </head>
 <body>
-
+	
 	<div class="barra">
-            <div class="contenedorclearfix">
-                <div class="logo">
-                    <img src="images/YOUFLIXFINALOGO.PNG" alt="Logo Youflix">
+        <div class="contenedor clearfix">
+            <div class="logo">
+                <img src="img/YOUFLIXFINALOGO.PNG" alt="Logo Youflix">
+            </div>
+
+            <nav class="navegacion-principal">
+                <div class="categorias">
+                    <a href="#">Categirias</a>
+                    <a href="#">LIVE</a>
+                    <a href="#">Foro</a>
                 </div>
 
-                <nav class="navegacion-principal">
-								<div class="caract">
-                    <a href="#">Conferencia</a>
-                    <a href="#">Calendario</a>
-                    <a href="#">Invitados</a>
-								</div>
-								<div class="logsign">
-											<a href="login.html">Log In</a>
-											<a href="#">Registro</a>
-                  		<a href="#">PREMIUM</a>
-								</div>
-								<form class="" action="videos.php" method="post" onsubmit="return validar()">
-										  <input type="text" name="Titulo" id="search" value="Buscar..." onFocus="this.value=''"><br>
-								</form>
-							</nav>
+                <div class="Buscador">
+                    <div class="busqueda">
+                        <form action="videos.php" method="post">
+                            <input type="text" class="form-control input-sm" maxlength="64" placeholder="Search" titulo="$fila['titulo']" />
+                            <button type="submit" class="btn btn-primary btn-sm">Search</button>
+                        </form>
+                    </div>
+                </div>
 
-            </div><!--.contenedor-->
-        </div><!--.barra-->
-
+                <div class="logeado">
+                    <a href="#">Log IN</a>
+                    <a href="#">Sign UP</a>
+                    <a href="#">Premium</a>
+                </div>
+            </nav>
+        </div><!--.contenedor-->
+    </div><!--.barra-->
+	
+	
 	<div class="flexslider">
 		<ul class="slides">
 
 			<li>
-				<img src="images/1.jpg" alt="">
+				<img src="img/1.jpg" alt="">
 				<section class="caption">
-					<div class="textoSlide"><h2>The doctors, nurses and aid workers rebuilding Syria</h2></div>
+					<div class="textoSlide"><h2>En boca cerrada no entran moscas pero sin p***as como roscast#1</h2></div>
 				</section>
 			</li>
 
 			<li>
-				<img src="images/2.jpg" alt="">
+				<img src="img/2.jpg" alt="">
 				<section class="caption">
-					<div class="textoSlide"><h2>The doctors, nurses and aid workers rebuilding Syria AEFASGASFGASFASFGASGASGASG</h2></div>
+					<div class="textoSlide"><h2>Lorem slider ali baba ar la vibora se va pon el culo acia atrat#2</h2></div>
 				</section>
 			</li>
-
-			<li>
-				<img src="images/3.jpg" alt="">
+			
+		    <li>
+				<img src="img/3.jpg" alt="">
 				<section class="caption">
-					<div class="textoSlide"><h2>The doctors, nurses and aid</h2></div>
+					<div class="textoSlide"><h2>En boca cerrada no entran moscas pero sin p***as como roscast#3</h2></div>
 				</section>
 			</li>
-
-						<li>
-							<img src="images/1.jpg" alt="">
-							<section class="caption">
-								<div class="textoSlide"><h2>The doctors, nurses and aid workers rebuilding Syria</h2></div>
-							</section>
-						</li>
-
-						<li>
-							<img src="images/2.jpg" alt="">
-							<section class="caption">
-								<div class="textoSlide"><h2>The doctors, nurses and aid workers rebuilding Syria AEFASGASFGASFASFGASGASGASG</h2></div>
-							</section>
-						</li>
-		    <iframe width="854" height="480" src="https://www.youtube.com/embed/-JqD-O-sZY4?list=RDMM-JqD-O-sZY4&amp;ecver=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-	</div>
-
-</body>
+			
+        </ul>
+    </div>
+    
+    </body>
 </html>
