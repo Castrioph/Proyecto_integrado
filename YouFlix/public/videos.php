@@ -34,6 +34,6 @@ foreach ($resultado as $fila)
 <?php
 echo "<a href='videos.php?id=".$fila['Titulo']."'>Comentar</a> <br> <br>";
 }
- ?>
+ ?
   </body>
 </html>
