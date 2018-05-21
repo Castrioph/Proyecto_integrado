@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    	<link rel="stylesheet" href="css/flexslider.css">
+    	<link rel="stylesheet" href="css/font-awesome.css">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div class="barra">
+            <div class="contenedorclearfix">
+                 <div class="logo">
+                     <a href="index.html"><img src="images/YOUFLIXFINALOGO.PNG" alt="Logo Youflix"></a>
+                 </div>
+                    <nav class="navegacion-principal">
+                        <div class="caract">
+                            <a href="#">Conferencia</a>
+                            <a href="#">Calendario</a>
+                            <a href="#">Invitados</a>
+                        </div>
+                        <div class="logsign">
+                            <a href="#">Log In</a>
+                            <a href="#">Registro</a>
+                            <a href="#">PREMIUM</a>
+                        </div>
+                        <form class="" action="videos.php" method="post" onsubmit="return validar()">
+                            <input type="text" name="Titulo" id="search" value="Buscar..." onFocus="this.value=''"><br>
+                        </form>
+                    </nav>
+            </div><!--.contenedor-->
+        </div><!--.barra-->
+
+        <form method="post">
+            <div>
+                <h2>LOG IN</h2>
+                <h3><label> Usuario</label></h3>
+                <input type="text"><br>
+                <h3><label> Contraseña</label></h3>
+                <input type="text"><br>
+            </div>
+            <div>
+                <h2>REGISTAR USUARIO</h2>
+                <h3><label> Usuario</label></h3>
+                <input type="text"><br>
+                <h3><label> Contraseña</label></h3>
+                <input type="text"><br>
+                <h3><label> Repetir contraseña</label></h3>
+                <input type="text"><br>
+                <h3><label> Correo electrónico</label></h3>
+                <input type="text"><br>
+            </div>
+        </form>
+    </body>
+</html>
+
