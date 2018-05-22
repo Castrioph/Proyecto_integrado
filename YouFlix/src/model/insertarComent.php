@@ -21,15 +21,7 @@
 </style>
 <button class="button"><a href="index.html">Indice</a></button>
 <button class="Videos"><a href="videos.php">Videos</a></button>
-<?php
-include '../src/model/consultas.php';
 
-$consulta = new consultas();
-$resultado = $consulta->insert($Comentarios = $_POST['Comentarios']);
-$resultado = $consulta->select();
-echo $Comentarios;
-
-?>
 
 </body>
 </html>
