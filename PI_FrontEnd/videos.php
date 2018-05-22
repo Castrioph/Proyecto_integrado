@@ -24,6 +24,11 @@ foreach ($resultado as $fila)
   echo "Título: ".$fila["Titulo"]."<br>";
   echo "Descripción: ".$fila["Descripcion"]."<br>";
   echo "Puntuación: ".$fila["Puntuacion"]."<br>";
+<<<<<<< HEAD
+  echo "Fecha: ".$fila["Fecha"]."<br><br>";
+}
+  ?>
+=======
   echo "Fecha: ".$fila["Fecha"]."<br>";
 ?>
 <form class="" action="insertarComent.php" method="post" onsubmit="return validar()">
@@ -35,5 +40,6 @@ foreach ($resultado as $fila)
 echo "<a href='videos.php?id=".$fila['Titulo']."'>Comentar</a> <br> <br>";
 }
  ?>
+>>>>>>> master
   </body>
 </html>
