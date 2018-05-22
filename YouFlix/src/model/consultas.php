@@ -11,6 +11,10 @@ class consultas extends conectar
   {
     return parent::consultar("SELECT * FROM videos WHERE Titulo LIKE '%$Titulo%'");
   }
+  public function selecTodo()
+  {
+    return parent::consultar("SELECT * FROM videos");
+  }
   public function insert($Comentarios)
 {
   return parent::consultar("INSERT INTO videos (Comentarios)

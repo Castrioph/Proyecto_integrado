@@ -13,8 +13,8 @@
 
 
 -- Volcando estructura de base de datos para proyectointegrado
-CREATE DATABASE IF NOT EXISTS `proyectointegrado` /*!40100 DEFAULT CHARACTER SET ucs2 COLLATE ucs2_spanish_ci */;
-USE `proyectointegrado`;
+CREATE DATABASE IF NOT EXISTS `YouFlix` /*!40100 DEFAULT CHARACTER SET ucs2 COLLATE ucs2_spanish_ci */;
+USE `YouFlix`;
 
 -- Volcando estructura para tabla proyectointegrado.categorias
 CREATE TABLE IF NOT EXISTS `categorias` (
