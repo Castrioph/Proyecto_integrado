@@ -5,6 +5,8 @@
     <title>LISTADO</title>
   </head>
   <body>
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
     <style media="screen">
 a{text-decoration: none;}
 .button{background-color:#00CED1;}
@@ -15,25 +17,21 @@ a{text-decoration: none;}
   <br><br>
     <?php
 include '../src/model/consultas.php';
-$Titulo=$_POST['Titulo'];
-
+$titulo=$_POST['titulo'];
 $consulta = new consultas();
-$resultado=$consulta->select($Titulo);
+$resultado=$consulta->select($titulo);
 foreach ($resultado as $fila)
 {
-  echo "Título: ".$fila["Titulo"]."<br>";
-  echo "Descripción: ".$fila["Descripcion"]."<br>";
-  echo "Puntuación: ".$fila["Puntuacion"]."<br>";
-  echo "Fecha: ".$fila["Fecha"]."<br>";
-?>
-<form class="" action="insertarComent.php" method="post" onsubmit="return validar()">
-      <input type="text" name="Comentarios" id="Coment" value="Perra Comenta..." onFocus="this.value=''"><br>
-      <input type="hidden" name="id_videos" value="<?= $_GET["id_videos"]?>">
-      <br><br>
-</form>
+
+  echo $fila["titulo"]." ";
+  echo $fila["fecha"]."<br>";
+  echo $fila["descripcion"]."<br>";
+
+  ?>
+  <a href ="video.php?titulo=<?=$titulo?>"><img src="<?=$fila["miniaturas"]?>" alt=""></a>
 <?php
-echo "<a href='videos.php?id=".$fila['Titulo']."'>Comentar</a> <br> <br>";
+
 }
- ?
+ ?>
   </body>
 </html>
