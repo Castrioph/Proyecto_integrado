@@ -23,7 +23,7 @@ $resultado=$consulta->select($titulo);
 foreach ($resultado as $fila)
 {
 
-  echo $fila["titulo"]." ";
+  echo "<br>".$fila["titulo"]."<br>";
   echo $fila["fecha"]."<br>";
   echo $fila["descripcion"]."<br>";
 

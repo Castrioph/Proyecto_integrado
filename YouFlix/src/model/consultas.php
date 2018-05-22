@@ -7,18 +7,18 @@ class consultas extends conectar
   {
     parent::conectar();
   }
-  public function select($Titulo)
+  public function select($titulo)
   {
-    return parent::consultar("SELECT * FROM videos WHERE Titulo LIKE '%$Titulo%'");
+    return parent::consultar("SELECT * FROM videos WHERE titulo LIKE '%$titulo%'");
   }
   public function selecTodo()
   {
     return parent::consultar("SELECT * FROM videos");
   }
-  public function insert($Comentarios)
+  public function insert($id_video, $comentarios)
 {
-  return parent::consultar("INSERT INTO videos (Comentarios)
-      VALUES ('$Comentarios') where id_videos=$id_videos");
+  return parent::consultar("INSERT INTO comentarios(comentarios,id_video)
+      VALUES ('$comentarios',$id_video)");
  }
 }
 ?>

@@ -18,22 +18,25 @@ a{text-decoration: none;}
     <?php
 include '../src/model/consultas.php';
 $titulo=$_GET['titulo'];
+
 $consulta = new consultas();
 $resultado=$consulta->select($titulo);
 foreach ($resultado as $fila)
 {
-  echo $fila["titulo"]." ";
+?>
+<video width="620" height="440" controls>
+<source src="<?=$fila["media_video"]?>" type="video/mp4">
+</video>
+<?php
+  echo "<br>".$fila["titulo"]."<br>";
   echo $fila["fecha"]."<br>";
   echo $fila["puntuacion"]."<br>";
   echo $fila["descripcion"]."<br>";
-  echo $fila["comentarios"]."<br>";
 ?>
- <video width="620" height="440" controls>
- <source src="<?=$fila["media_video"]?>" type="video/mp4">
- </video>
+
 <form class="" action="insertarComent.php" method="post" onsubmit="return validar()">
-      <input type="text" name="Comentarios" id="Coment" value="Comenta..." onFocus="this.value=''"><br>
-      <input type="hidden" name="id_videos" value="<?= $_GET["id_videos"]?>">
+      <input type="text" name="comentarios" id="Coment" value="Comenta..." onFocus="this.value=''"><br>
+      <input type="hidden" name="id_video" value="<?= $fila["id_video"]?>">
       <input type="submit" name="Enviar" value="ENVIAR">
       <br><br>
 </form>
