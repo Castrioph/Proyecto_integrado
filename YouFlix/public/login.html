@@ -9,9 +9,9 @@
 	<link rel="stylesheet" href="css/font-awesome.css">
 
 	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="js/vue.js"></script>
 	<script src="js/jquery-3.1.0.min.js"></script>
 	<script src="js/jquery.flexslider.js"></script>
 	<script src="js/main.js"></script>
@@ -50,28 +50,59 @@
     </div><!--.barra-->
 
 
-        <form method="post">
+        <form id="log" method="post">
             <div>
-                <h2>LOG IN</h2>
-                <h3><label> Usuario</label></h3>
-                <input type="text"><br>
-                <h3><label> Contraseña</label></h3>
-                <input type="text"><br> <br>
-                <button type="submit" class="btn btn-primary">Inica sesion</button><br>
+                <h2 @click="toogleLogin">LOG IN</h2>
+                <div  v-if="showLogin">
+                    <h3><label> Usuario</label></h3>
+                    <input type="text"><br>
+                    <h3><label> Contraseña</label></h3>
+                    <input type="text"><br> <br>
+                    <button type="submit" class="btn btn-primary">Inica sesion</button><br>
+                </div>
             </div>
+
             <div>
-                <h2>REGISTAR USUARIO</h2>
-                <h3><label> Usuario</label></h3>
-                <input type="text"><br>
-                <h3><label> Contraseña</label></h3>
-                <input type="text"><br>
-                <h3><label> Repetir contraseña</label></h3>
-                <input type="text"><br>
-                <h3><label> Correo electrónico</label></h3>
-                <input type="text"><br> <br>
-                <button type="submit" class="btn btn-primary">Registrate</button><br>
+                <h2 @click="toogleLogup">REGISTAR USUARIO</h2>
+                <div v-if="showLogup">
+                    <h3><label> Usuario</label></h3>
+                    <input type="text"><br>
+                    <h3><label> Contraseña</label></h3>
+                    <input type="text"><br>
+                    <h3><label> Repetir contraseña</label></h3>
+                    <input type="text"><br>
+                    <h3><label> Correo electrónico</label></h3>
+                    <input type="text"><br> <br>
+                    <button type="submit" class="btn btn-primary">Registrate</button><br>
+                </div>
             </div>
         </form>
+        <script>
+            new Vue({
+                el: '#log',
+                data: {
+                  showLogin: false,
+                  showLogup: false
+                },
+                methods:{
+                  toogleLogin(){
+                    if(this.showLogin){
+                      this.showLogin=false
+                    }else{
+                      this.showLogin=true
+                    }
+                  },
+                  toogleLogup(){
+                    if(this.showLogup){
+                      this.showLogup=false
+                    }else{
+                      this.showLogup=true
+                    }
+                  }
+                }
+            })
+
+        </script>
     <?php
 
     ?>
