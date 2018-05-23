@@ -18,7 +18,6 @@ a{text-decoration: none;}
     <?php
 include '../src/model/consultas.php';
 $titulo=$_GET['titulo'];
-
 $consulta = new consultas();
 $resultado=$consulta->select($titulo);
 foreach ($resultado as $fila)
