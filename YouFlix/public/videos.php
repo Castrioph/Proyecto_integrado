@@ -22,15 +22,12 @@ $consulta = new consultas();
 $resultado=$consulta->select($titulo);
 foreach ($resultado as $fila)
 {
-
+  ?>
+<a href ="video.php?titulo=<?=$titulo?>"><img src="<?=$fila["miniaturas"]?>" alt=""></a>
+  <?php
   echo "<br>".$fila["titulo"]."<br>";
   echo $fila["fecha"]."<br>";
   echo $fila["descripcion"]."<br>";
-
-  ?>
-  <a href ="video.php?titulo=<?=$titulo?>"><img src="<?=$fila["miniaturas"]?>" alt=""></a>
-<?php
-
 }
  ?>
   </body>

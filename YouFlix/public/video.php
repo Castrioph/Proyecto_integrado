@@ -33,7 +33,6 @@ foreach ($resultado as $fila)
   echo $fila["puntuacion"]."<br>";
   echo $fila["descripcion"]."<br>";
 ?>
-
 <form class="" action="insertarComent.php" method="post" onsubmit="return validar()">
       <input type="text" name="comentarios" id="Coment" value="Comenta..." onFocus="this.value=''"><br>
       <input type="hidden" name="id_video" value="<?= $fila["id_video"]?>">
@@ -41,7 +40,6 @@ foreach ($resultado as $fila)
       <br><br>
 </form>
 <?php
-
 }
  ?>
   </body>
