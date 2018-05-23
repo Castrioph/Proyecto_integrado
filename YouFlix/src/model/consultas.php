@@ -20,5 +20,9 @@ class consultas extends conectar
   return parent::consultar("INSERT INTO comentarios(comentarios,id_video)
       VALUES ('$comentarios',$id_video)");
  }
+ public function selectComent($id_video)
+ {
+   return parent::consultar("SELECT * FROM comentarios WHERE id_video=$id_video");
+ }
 }
 ?>

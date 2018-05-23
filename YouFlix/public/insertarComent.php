@@ -25,10 +25,9 @@
 include '../src/model/consultas.php';
 $consulta = new consultas();
 $comentarios=$_POST['comentarios'];
-echo $comentarios;
 $id_video=$_POST['id_video'];
 $resultado=$consulta->insert($id_video,$comentarios);
-
+header("Location:video.php");
 ?>
 
 
