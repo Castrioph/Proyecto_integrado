@@ -48,6 +48,7 @@ foreach ($resultado as $fila)
     echo "<br>".$fila['id_video'];
     echo "  ".$fila['comentarios'];
 
+
 }
  ?>
   </body>
