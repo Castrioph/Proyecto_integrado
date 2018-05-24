@@ -29,6 +29,7 @@ foreach ($resultado as $fila)
   $id_video=$fila["id_video"];
   ?>
   <a href ="video.php?titulo=<?=$titulo?>&id_video=<?=$id_video?>"><img src="<?=$fila["miniaturas"]?>" alt=""></a>
+  <br><br>
 <?php
 
 }
