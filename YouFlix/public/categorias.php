@@ -78,7 +78,6 @@ $consulta = new consultas();
 		<div class="flexslider">
 			<ul class="slides">
 					<?php
-
 					$resultado=$consulta->selecTodo();
 					foreach ($resultado as $fila)
 					{
@@ -100,7 +99,6 @@ $consulta = new consultas();
 		<div class="flexslider">
 			<ul class="slides">
 					<?php
-
 					$resultado=$consulta->selecTodo();
 					foreach ($resultado as $fila)
 					{
@@ -111,59 +109,10 @@ $consulta = new consultas();
 					<div class="textoSlide"><a href ="video2.php?id_video=<?=$id_video?>"><h2>MARKESET</h2></a></div>
 				</section>
 			</li>
-<<<<<<< HEAD:YouFlix/public/categorias.php
 						<?php
 						}
 						 ?>
 			</ul>
 		</div>
-=======
-
-			<li>
-				<img src="images/2.jpg" alt="">
-				<section class="caption">
-					<div class="textoSlide"><h2>Lorem slider ali baba ar la vibora se va pon el culo acia atrat#2</h2></div>
-				</section>
-
-			</li>
-
-		    <li>
-				<img src="images/3.jpg" alt="">
-				<section class="caption">
-					<div class="textoSlide"><h2>En boca cerrada no entran moscas pero sin p***as como roscast#3</h2></div>
-				</section>
-			</li>
-
-        </ul>
-    </div>
-
-    <div class="footer clearfix">
-
-       <div class="menu_footer">
-           <ul>
-                <li><a href="#"><i class="fas fa-list-ul"></i>Categorias</a></li>
-                <li><a href="#"><i class="fas fa-users"></i>Foro</a></li>
-                <li><a href="#"><i class="fas fa-broadcast-tower"></i>LIVE</a></li>
-            </ul>
-       </div>
-
-        <div class="redes_footer">
-            <ul>
-                <li><a href="#"><i class="fab fa-facebook"></i>Faceboock</a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
-            </ul>
-        </div>
-
-        <div class="barra_form"></div>
-
-        <div class="descrip_footer">
-            <ul>
-                <li><a href="about.php">Sobre Nosotros</a></li>
-                <li><a href="terminos.php">Terminos de uso y condiciones</a></li>
-            </ul>
-        </div>
-    </div>
->>>>>>> b1f455f0fed4ae2d08b4412d9f1be3feb6f23be9:YouFlix/public/categorias.html
 </body>
 </html>
