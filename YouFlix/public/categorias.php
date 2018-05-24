@@ -49,93 +49,72 @@
     </div>
 
     <h2>Videojuegos</h2>
-
 	<div class="flexslider">
 		<ul class="slides">
+				<?php
 
-			<li>
-				<img src="images/1.jpg" alt="">
+include '../src/model/consultas.php';
+
+$consulta = new consultas();
+
+				$resultado=$consulta->selecTodo();
+				foreach ($resultado as $fila)
+				{
+					?>
+					<li>
+				<img src="<?=$fila["miniaturas"]?>" alt="">
 				<section class="caption">
-					<div class="textoSlide"><h2>En boca cerrada no entran moscas pero sin p***as como roscast#1</h2></div>
-				</section>
-			</li>
-
-			<li>
-				<img src="images/2.jpg" alt="">
-				<section class="caption">
-					<div class="textoSlide"><h2>Lorem slider ali baba ar la vibora se va pon el culo acia atrat#2</h2></div>
-				</section>
-
-			</li>
-
-		    <li>
-				<img src="images/3.jpg" alt="">
-				<section class="caption">
-					<div class="textoSlide"><h2>En boca cerrada no entran moscas pero sin p***as como roscast#3</h2></div>
-				</section>
-			</li>
-
-        </ul>
-    </div>
+				<div class="textoSlide"><a href ="video2.php?id_video=<?=$id_video?>"><h2>MARKESET</h2></a></div>
+			</section>
+		</li>
+					<?php
+					}
+					 ?>
+		</ul>
+	</div>
 
     <h2>Erótico-instructivo</h2>
 
-	<div class="flexslider">
-		<ul class="slides">
+		<div class="flexslider">
+			<ul class="slides">
+					<?php
 
-			<li>
-				<img src="images/1.jpg" alt="">
-				<section class="caption">
-					<div class="textoSlide"><h2>En boca cerrada no entran moscas pero sin p***as como roscast#1</h2></div>
+					$resultado=$consulta->selecTodo();
+					foreach ($resultado as $fila)
+					{
+						?>
+						<li>
+					<img src="<?=$fila["miniaturas"]?>" alt="">
+					<section class="caption">
+					<div class="textoSlide"><a href ="video2.php?id_video=<?=$id_video?>"><h2>MARKESET</h2></a></div>
 				</section>
 			</li>
-
-			<li>
-				<img src="images/2.jpg" alt="">
-				<section class="caption">
-					<div class="textoSlide"><h2>Lorem slider ali baba ar la vibora se va pon el culo acia atrat#2</h2></div>
-				</section>
-
-			</li>
-
-		    <li>
-				<img src="images/3.jpg" alt="">
-				<section class="caption">
-					<div class="textoSlide"><h2>En boca cerrada no entran moscas pero sin p***as como roscast#3</h2></div>
-				</section>
-			</li>
-
-        </ul>
-    </div>
+						<?php
+						}
+						 ?>
+			</ul>
+		</div>
 
     <h2>Tecnología</h2>
 
-	<div class="flexslider">
-		<ul class="slides">
+		<div class="flexslider">
+			<ul class="slides">
+					<?php
 
-			<li>
-				<img src="images/1.jpg" alt="">
-				<section class="caption">
-					<div class="textoSlide"><h2>En boca cerrada no entran moscas pero sin p***as como roscast#1</h2></div>
+					$resultado=$consulta->selecTodo();
+					foreach ($resultado as $fila)
+					{
+						?>
+						<li>
+					<img src="<?=$fila["miniaturas"]?>" alt="">
+					<section class="caption">
+					<div class="textoSlide"><a href ="video2.php?id_video=<?=$id_video?>"><h2>MARKESET</h2></a></div>
 				</section>
 			</li>
-
-			<li>
-				<img src="images/2.jpg" alt="">
-				<section class="caption">
-					<div class="textoSlide"><h2>Lorem slider ali baba ar la vibora se va pon el culo acia atrat#2</h2></div>
-				</section>
-
-			</li>
-
-		    <li>
-				<img src="images/3.jpg" alt="">
-				<section class="caption">
-					<div class="textoSlide"><h2>En boca cerrada no entran moscas pero sin p***as como roscast#3</h2></div>
-				</section>
-			</li>
-
-        </ul>
-    </div>
+						<?php
+						}
+						 ?>
+			</ul>
+		</div>
 </body>
 </html>
