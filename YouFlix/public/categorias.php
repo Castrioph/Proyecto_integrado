@@ -25,7 +25,7 @@
 
             <nav class="navegacion-principal">
                 <div class="categorias">
-                    <a href="categorias.html">Categorías</a>
+                    <a href="categorias.php">Categorías</a>
                     <a href="live.html">LIVE</a>
                     <a href="foro.html">Foro</a>
                 </div>
