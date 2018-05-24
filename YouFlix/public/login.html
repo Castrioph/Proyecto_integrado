@@ -52,7 +52,7 @@
 
         <form id="log" method="post">
             <div>
-                <h2 @click="toogleLogin">LOG IN</h2>
+                <h2><label @click="toogleLogin" >LOG IN </label></h2>
                 <div  v-if="showLogin">
                     <h3><label> Usuario</label></h3>
                     <input type="text"><br>
@@ -63,7 +63,7 @@
             </div>
 
             <div>
-                <h2 @click="toogleLogup">REGISTAR USUARIO</h2>
+                <h2><label @click="toogleLogup">REGISTAR USUARIO</label></h2>
                 <div v-if="showLogup">
                     <h3><label> Usuario</label></h3>
                     <input type="text"><br>
