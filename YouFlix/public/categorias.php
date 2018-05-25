@@ -54,21 +54,20 @@
 <div class="flexslider">
     <ul class="slides">
         <?php
-
         include '../src/model/consultas.php';
 
         $consulta = new consultas();
-
-        $resultado = $consulta->selecTodo();
-        foreach ($resultado as $fila) {
+        $i = 0;
+        $resultado = $consulta->consultar("SELECT * FROM videos WHERE id_categorias=1");
+        for ($i; $i < 4; $i++) {
+            $fila = $resultado->fetch_assoc();
             ?>
+
             <li>
                 <img src="<?= $fila["miniaturas"] ?>" alt="">
-                <section class="caption">
-                    <div class="textoSlide"><a href="video2.php?id_video=<?= $id_video ?>"><h2>MARKESET</h2></a></div>
-                </section>
             </li>
             <?php
+            $i++;
         }
         ?>
     </ul>
@@ -79,16 +78,17 @@
 <div class="flexslider">
     <ul class="slides">
         <?php
-        $resultado = $consulta->selecTodo();
-        foreach ($resultado as $fila) {
+        $i = 0;
+        $resultado = $consulta->consultar("SELECT * FROM videos WHERE id_categorias=2");
+        for ($i; $i < 4; $i++) {
+            $fila = $resultado->fetch_assoc();
             ?>
+
             <li>
                 <img src="<?= $fila["miniaturas"] ?>" alt="">
-                <section class="caption">
-                    <div class="textoSlide"><a href="video2.php?id_video=<?= $id_video ?>"><h2>MARKESET</h2></a></div>
-                </section>
             </li>
             <?php
+            $i++;
         }
         ?>
     </ul>
@@ -99,16 +99,39 @@
 <div class="flexslider">
     <ul class="slides">
         <?php
-        $resultado = $consulta->selecTodo();
-        foreach ($resultado as $fila) {
+        $i = 0;
+        $resultado = $consulta->consultar("SELECT * FROM videos WHERE id_categorias=3");
+        for ($i; $i < 4; $i++) {
+            $fila = $resultado->fetch_assoc();
             ?>
+
             <li>
                 <img src="<?= $fila["miniaturas"] ?>" alt="">
-                <section class="caption">
-                    <div class="textoSlide"><a href="video2.php?id_video=<?= $id_video ?>"><h2>MARKESET</h2></a></div>
-                </section>
             </li>
             <?php
+            $i++;
+        }
+        ?>
+    </ul>
+</div>
+
+
+<h2>Tecnología</h2>
+
+<div class="flexslider">
+    <ul class="slides">
+        <?php
+        $i = 0;
+        $resultado = $consulta->consultar("SELECT * FROM videos WHERE id_categorias=4");
+        for ($i; $i < 4; $i++) {
+            $fila = $resultado->fetch_assoc();
+            ?>
+
+            <li>
+                <img src="<?= $fila["miniaturas"] ?>" alt="" href="video2.php?id_video=<?=$fila['id_videos']?>" >
+            </li>
+            <?php
+            $i++;
         }
         ?>
     </ul>
