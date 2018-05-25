@@ -1,6 +1,8 @@
 <?php
 include "conexion.php";
-class BD{
+
+class BD
+{
     private $server;
     private $user;
     private $pass;
@@ -8,21 +10,24 @@ class BD{
     //conector
     private $conector;
 
-    function __construct(){
-      $this->server="18.220.107.185";
-      $this->user="castrioph";
-      $this->pass="admin";
-      $this->db="datosdebase";
+    function __construct()
+    {
+        $this->server = "18.220.107.185";
+        $this->user = "castrioph";
+        $this->pass = "admin";
+        $this->db = "datosdebase";
     }
-    function conectar(){
-      $conectorTmp= new mysqli($this->server,$this->user,$this->pass,$this->db);
-      if ($conectorTmp->connect_errno) {
-        $this->conector=false;
-      }
-      else {
-        $this->conector=$conectorTmp;
-      }
+
+    function conectar()
+    {
+        $conectorTmp = new mysqli($this->server, $this->user, $this->pass, $this->db);
+        if ($conectorTmp->connect_errno) {
+            $this->conector = false;
+        } else {
+            $this->conector = $conectorTmp;
+        }
     }
+
     /**
      * Get the value of Server
      *
@@ -32,6 +37,7 @@ class BD{
     {
         return $this->server;
     }
+
     /**
      * Set the value of Server
      *
@@ -44,6 +50,7 @@ class BD{
         $this->server = $server;
         return $this;
     }
+
     /**
      * Get the value of User
      *
@@ -53,6 +60,7 @@ class BD{
     {
         return $this->user;
     }
+
     /**
      * Set the value of User
      *
@@ -65,6 +73,7 @@ class BD{
         $this->user = $user;
         return $this;
     }
+
     /**
      * Get the value of Pass
      *
@@ -74,6 +83,7 @@ class BD{
     {
         return $this->pass;
     }
+
     /**
      * Set the value of Pass
      *
@@ -86,6 +96,7 @@ class BD{
         $this->pass = $pass;
         return $this;
     }
+
     /**
      * Get the value of Db
      *
@@ -95,6 +106,7 @@ class BD{
     {
         return $this->db;
     }
+
     /**
      * Set the value of Db
      *
@@ -107,6 +119,7 @@ class BD{
         $this->db = $db;
         return $this;
     }
+
     /**
      * Get the value of Conector
      *
@@ -116,6 +129,7 @@ class BD{
     {
         return $this->conector;
     }
+
     /**
      * Set the value of Conector
      *
@@ -128,6 +142,7 @@ class BD{
         $this->conector = $conector;
         return $this;
     }
+
     /**
      * Get the value of Config
      *
@@ -137,6 +152,7 @@ class BD{
     {
         return $this->config;
     }
+
     /**
      * Set the value of Config
      *
@@ -150,4 +166,5 @@ class BD{
         return $this;
     }
 }
- ?>
+
+?>
