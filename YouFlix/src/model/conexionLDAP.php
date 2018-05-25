@@ -7,7 +7,7 @@ $ldap = ldap_connect($adServer);
 $username = 'adminE';
 $password = 'Admin1234';
 
-$ldaprdn = 'win2012elriex.local' . "\\" . $username;
+$ldaprdn = 'WIN2012ELRIEX' . "\\" . $username;
 
 ldap_set_option($ldap, LDAP_OPT_PROTOCOL_VERSION, 3);
 ldap_set_option($ldap, LDAP_OPT_REFERRALS, 0);
