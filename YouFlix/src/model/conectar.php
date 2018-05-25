@@ -18,7 +18,4 @@ public function consultar($query)
 }
 }
 
-
-
-
  ?>
