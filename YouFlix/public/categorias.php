@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="css/flexslider.css">
     <link rel="stylesheet" href="css/font-awesome.css">
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -135,5 +135,34 @@
         ?>
     </ul>
 </div>
+
+<div class="footer clearfix">
+
+    <div class="menu_footer">
+        <ul>
+            <li><a href="#"><i class="fas fa-list-ul"></i>Categorias</a></li>
+            <li><a href="#"><i class="fas fa-users"></i>Foro</a></li>
+            <li><a href="#"><i class="fas fa-broadcast-tower"></i>LIVE</a></li>
+        </ul>
+    </div>
+
+    <div class="redes_footer">
+        <ul>
+            <li><a href="#"><i class="fab fa-facebook"></i>Facebook</a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
+        </ul>
+    </div>
+
+    <div class="barra_form"></div>
+
+    <div class="descrip_footer">
+        <ul>
+            <li><a href="about.php">Sobre Nosotros</a></li>
+            <li><a href="terminos.php">Terminos de uso y condiciones</a></li>
+        </ul>
+    </div>
+</div>
+
 </body>
 </html>
