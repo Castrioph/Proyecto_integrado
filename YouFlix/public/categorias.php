@@ -21,34 +21,33 @@
 <div class="barra">
     <div class="contenedor clearfix">
         <div class="logo">
-            <a href="index.html"><img src="images/YOUFLIXFINALOGO.PNG" alt="Logo Youflix"></a>
+            <img src="images/YOUFLIXFINALOGO.PNG" alt="Logo Youflix">
         </div>
 
         <nav class="navegacion-principal">
             <div class="categorias">
                 <a href="categorias.php">Categorías</a>
-                <a href="live.html">LIVE</a>
-                <a href="foro.html">Foro</a>
+                <a href="../src/model/conexionLDAP.php">Active Directory</a>
             </div>
 
             <div class="Buscador">
                 <div class="busqueda">
                     <form action="videos.php" method="post">
                         <input type="text" class="form-control input-sm" maxlength="64" placeholder="Search"
-                               titulo="$fila['titulo']"/>
-                        <button type="submit" class="btn btn-primary btn-sm">Search</button>
+                               name="titulo"/>
+                        <button type="submit" class="btn btn-primary btn-sm"><i class="fas fa-search"></i></button>
                     </form>
                 </div>
             </div>
 
             <div class="logeado">
-                <a href="login.html">Log IN</a>
-                <a href="login.html">Sign UP</a>
+                <a href="login.php">Log IN</a>
+                <a href="login.php">Sign UP</a>
                 <a href="#">Premium</a>
             </div>
         </nav>
     </div><!--.contenedor-->
-</div>
+</div><!--.barra-->
 
 <h2>Videojuegos</h2>
 <div class="flexslider">
@@ -128,7 +127,7 @@
             ?>
 
             <li>
-                <img src="<?= $fila["miniaturas"] ?>" alt="" href="video2.php?id_video=<?=$fila['id_videos']?>" >
+                <img src="<?= $fila["miniaturas"] ?>" alt="" href="video2.php?id_video=<?= $fila['id_videos'] ?>">
             </li>
             <?php
             $i++;
