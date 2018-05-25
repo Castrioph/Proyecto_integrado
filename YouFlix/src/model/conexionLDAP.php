@@ -4,10 +4,10 @@
 $adServer = "ldap://10.2.72.84";
 
 $ldap = ldap_connect($adServer);
-$username = 'juanmi';
-$password = 'password';
+$username = 'adminE';
+$password = 'Admin1234';
 
-$ldaprdn = 'Windows2012-Elriex' . "\\" . $username;
+$ldaprdn = 'WIN2012ELRIEX' . "\\" . $username;
 
 ldap_set_option($ldap, LDAP_OPT_PROTOCOL_VERSION, 3);
 ldap_set_option($ldap, LDAP_OPT_REFERRALS, 0);

@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Host:                         127.0.0.1
--- Versión del servidor:         10.1.21-MariaDB - mariadb.org binary distribution
+-- Versión del servidor:         10.1.28-MariaDB - mariadb.org binary distribution
 -- SO del servidor:              Win32
--- HeidiSQL Versión:             9.4.0.5125
+-- HeidiSQL Versión:             9.5.0.5196
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -111,14 +111,43 @@ CREATE TABLE IF NOT EXISTS `videos` (
   PRIMARY KEY (`id_videos`),
   KEY `FK_videos_categorias` (`id_categorias`),
   CONSTRAINT `FK_videos_categorias` FOREIGN KEY (`id_categorias`) REFERENCES `categorias` (`id_categorias`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf16 COLLATE=utf16_spanish2_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf16 COLLATE=utf16_spanish2_ci;
 
--- Volcando datos para la tabla datosdebase.videos: ~3 rows (aproximadamente)
+-- Volcando datos para la tabla datosdebase.videos: ~35 rows (aproximadamente)
 /*!40000 ALTER TABLE `videos` DISABLE KEYS */;
 INSERT INTO `videos` (`id_videos`, `id_categorias`, `descripcion`, `puntuacion`, `titulo`, `fecha`, `miniaturas`, `media_video`) VALUES
-	(1, 1, NULL, 8, NULL, '2018-05-23', 'images/DavidMarke1.png', 'images/VideoMarke1.mp4'),
-	(2, 1, NULL, 6, NULL, '2018-04-22', 'images/DavidMarke2.png', 'images/VideoMarke2.mp4'),
-	(3, 1, NULL, 8, 'Marke On Fire', '2018-05-24', 'images/DavidMarke3.png', 'images/VideoMarke3.mp4');
+	(4, 1, NULL, NULL, 'Dark Souls 3', NULL, 'https://s3.eu-west-3.amazonaws.com/proyectointegra', 'https://s3.eu-west-3.amazonaws.com/proyectointegra'),
+	(5, 1, NULL, NULL, 'Cuphead', NULL, 'https://s3.eu-west-3.amazonaws.com/proyectointegra', 'https://s3.eu-west-3.amazonaws.com/proyectointegra'),
+	(6, 1, NULL, NULL, 'COD black ops 4', NULL, 'https://s3.eu-west-3.amazonaws.com/proyectointegra', 'https://s3.eu-west-3.amazonaws.com/proyectointegra'),
+	(7, 1, NULL, NULL, 'Hyper Light Drifter', NULL, 'https://s3.eu-west-3.amazonaws.com/proyectointegra', 'https://s3.eu-west-3.amazonaws.com/proyectointegra'),
+	(8, 1, NULL, NULL, 'Furi', NULL, 'https://s3.eu-west-3.amazonaws.com/proyectointegra', 'https://s3.eu-west-3.amazonaws.com/proyectointegra'),
+	(9, 1, NULL, NULL, 'Black desert', NULL, 'https://s3.eu-west-3.amazonaws.com/proyectointegra', 'https://s3.eu-west-3.amazonaws.com/proyectointegra'),
+	(10, 1, NULL, NULL, 'League of legends', NULL, 'https://s3.eu-west-3.amazonaws.com/proyectointegra', 'https://s3.eu-west-3.amazonaws.com/proyectointegra'),
+	(11, 1, NULL, NULL, 'WoW', NULL, 'https://s3.eu-west-3.amazonaws.com/proyectointegra', 'https://s3.eu-west-3.amazonaws.com/proyectointegra'),
+	(12, 2, NULL, NULL, '5 mitos absurdos del pc gaming', NULL, 'https://s3.eu-west-3.amazonaws.com/proyectointegra', 'https://s3.eu-west-3.amazonaws.com/proyectointegra'),
+	(13, 2, NULL, NULL, 'AMD Ryzen 2 Cuál deberias comprar', NULL, 'https://s3.eu-west-3.amazonaws.com/proyectointegra', 'https://s3.eu-west-3.amazonaws.com/proyectointegra'),
+	(14, 2, NULL, NULL, 'Mini PC', NULL, 'https://s3.eu-west-3.amazonaws.com/proyectointegra', 'https://s3.eu-west-3.amazonaws.com/proyectointegra'),
+	(15, 2, NULL, NULL, 'Monitor gaming curvo', NULL, 'https://s3.eu-west-3.amazonaws.com/proyectointegra', 'https://s3.eu-west-3.amazonaws.com/proyectointegra'),
+	(16, 2, NULL, NULL, 'La leyenda de Crysis', NULL, 'https://s3.eu-west-3.amazonaws.com/proyectointegra', 'https://s3.eu-west-3.amazonaws.com/proyectointegra'),
+	(17, 2, NULL, NULL, 'Teclado mecánico', NULL, 'https://s3.eu-west-3.amazonaws.com/proyectointegra', 'https://s3.eu-west-3.amazonaws.com/proyectointegra'),
+	(18, 2, NULL, NULL, 'Unboxing GeForce GTX 1070', NULL, 'https://s3.eu-west-3.amazonaws.com/proyectointegra', 'https://s3.eu-west-3.amazonaws.com/proyectointegra'),
+	(19, 2, NULL, NULL, 'Diferencia de frames al jugar', NULL, 'https://s3.eu-west-3.amazonaws.com/proyectointegra', 'https://s3.eu-west-3.amazonaws.com/proyectointegra'),
+	(20, 3, NULL, NULL, 'Getting some air, Atlas', NULL, 'https://s3.eu-west-3.amazonaws.com/proyectointegra', 'https://s3.eu-west-3.amazonaws.com/proyectointegra'),
+	(21, 3, NULL, NULL, 'Can you give me a hand', NULL, 'https://s3.eu-west-3.amazonaws.com/proyectointegra', 'https://s3.eu-west-3.amazonaws.com/proyectointegra'),
+	(22, 3, NULL, NULL, 'Humanoid robot tells jokes', NULL, 'https://s3.eu-west-3.amazonaws.com/proyectointegra', 'https://s3.eu-west-3.amazonaws.com/proyectointegra'),
+	(23, 3, NULL, NULL, 'MIT cheetah robot lands the running jump', NULL, 'https://s3.eu-west-3.amazonaws.com/proyectointegra', 'https://s3.eu-west-3.amazonaws.com/proyectointegra'),
+	(24, 3, NULL, NULL, 'Sophia Robot with creators', NULL, 'https://s3.eu-west-3.amazonaws.com/proyectointegra', 'https://s3.eu-west-3.amazonaws.com/proyectointegra'),
+	(25, 3, NULL, NULL, 'Terminator arm', NULL, 'https://s3.eu-west-3.amazonaws.com/proyectointegra', 'https://s3.eu-west-3.amazonaws.com/proyectointegra'),
+	(26, 3, NULL, NULL, 'Robot arm prosthetic controlled by thought', NULL, 'https://s3.eu-west-3.amazonaws.com/proyectointegra', 'https://s3.eu-west-3.amazonaws.com/proyectointegra'),
+	(27, 3, NULL, NULL, 'Sophia robot', NULL, 'https://s3.eu-west-3.amazonaws.com/proyectointegra', 'https://s3.eu-west-3.amazonaws.com/proyectointegra'),
+	(28, 4, NULL, NULL, 'A day in the life of a software engineer', NULL, 'https://s3.eu-west-3.amazonaws.com/proyectointegra', 'https://s3.eu-west-3.amazonaws.com/proyectointegra'),
+	(29, 4, NULL, NULL, 'JSON curso práctico completo', NULL, 'https://s3.eu-west-3.amazonaws.com/proyectointegra', 'https://s3.eu-west-3.amazonaws.com/proyectointegra'),
+	(30, 4, NULL, NULL, 'Vida de programador', NULL, 'https://s3.eu-west-3.amazonaws.com/proyectointegra', 'https://s3.eu-west-3.amazonaws.com/proyectointegra'),
+	(31, 4, NULL, NULL, 'Curso de programación de videojuegos', NULL, 'https://s3.eu-west-3.amazonaws.com/proyectointegra', 'https://s3.eu-west-3.amazonaws.com/proyectointegra'),
+	(32, 4, NULL, NULL, 'No sirvo para programar', NULL, 'https://s3.eu-west-3.amazonaws.com/proyectointegra', 'https://s3.eu-west-3.amazonaws.com/proyectointegra'),
+	(33, 4, NULL, NULL, 'The poetry of programming Linda Lukas', NULL, 'https://s3.eu-west-3.amazonaws.com/proyectointegra', 'https://s3.eu-west-3.amazonaws.com/proyectointegra'),
+	(34, 4, NULL, NULL, 'Uncle Bob Martin', NULL, 'https://s3.eu-west-3.amazonaws.com/proyectointegra', 'https://s3.eu-west-3.amazonaws.com/proyectointegra'),
+	(35, 4, NULL, NULL, 'What do programmers actually do', NULL, 'https://s3.eu-west-3.amazonaws.com/proyectointegra', 'https://s3.eu-west-3.amazonaws.com/proyectointegra');
 /*!40000 ALTER TABLE `videos` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

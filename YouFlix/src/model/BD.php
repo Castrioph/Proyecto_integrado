@@ -9,10 +9,10 @@ class BD{
     private $conector;
 
     function __construct(){
-      $this->server="localhost";
-      $this->user="root";
-      $this->pass="";
-      $this->db="proyectointegrado";
+      $this->server="18.220.107.185";
+      $this->user="castrioph";
+      $this->pass="admin";
+      $this->db="datosdebase";
     }
     function conectar(){
       $conectorTmp= new mysqli($this->server,$this->user,$this->pass,$this->db);
