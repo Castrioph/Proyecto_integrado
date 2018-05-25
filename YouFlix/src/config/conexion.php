@@ -1,7 +1,7 @@
 <?php
 $config=[];
-$config["server"]="localhost";
-$config["user"]="root";
-$config["pass"]="";
-$config["db"]="youflix";
+$config["server"]="18.220.107.185";
+$config["user"]="castrioph";
+$config["pass"]="admin";
+$config["db"]="datosdebase";
 ?>
