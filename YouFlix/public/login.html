@@ -7,6 +7,8 @@
 
 	<link rel="stylesheet" href="css/flexslider.css">
 	<link rel="stylesheet" href="css/font-awesome.css">
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
 	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
@@ -35,7 +37,7 @@
                     <div class="busqueda">
                         <form action="videos.php" method="post">
                             <input type="text" class="form-control input-sm" maxlength="64" placeholder="Search" titulo="$fila['titulo']" />
-                            <button type="submit" class="btn btn-primary btn-sm">Search</button>
+                            <button type="submit" class="btn btn-primary btn-sm"><i class="fas fa-search"></i></button>
                         </form>
                     </div>
                 </div>
@@ -51,20 +53,10 @@
 
 
         <form id="log" class="clearfix" method="post">
-            <div>
-                <h2><label @click="toogleLogin" >LOG IN </label></h2>
-                <div  v-if="showLogin">
-                    <h3><label> Usuario</label></h3>
-                    <input type="text"><br>
-                    <h3><label> Contraseña</label></h3>
-                    <input type="text"><br> <br>
-                    <button type="submit" class="btn btn-primary">Inica sesion</button><br>
-                </div>
-            </div>
 
-            <div>
-                <h2><label @click="toogleLogup">REGISTAR USUARIO</label></h2>
-                <div v-if="showLogup">
+            <div class="registro">
+                <h2 @click="toogleLogup">REGISTAR USUARIO</h2>
+                <div class="info_registro" v-if="showLogup">
                     <h3><label> Usuario</label></h3>
                     <input type="text"><br>
                     <h3><label> Contraseña</label></h3>
@@ -73,11 +65,33 @@
                     <input type="text"><br>
                     <h3><label> Correo electrónico</label></h3>
                     <input type="text"><br> <br>
-                    <button type="submit" class="btn btn-primary">Registrate</button><br>
+                    <button type="submit" class="sesiones_btn">Registrate</button><br>
+                </div>
+            </div>
+            <div  class="log_in"  id="logIn">
+                <h2 @click="toogleLogin">LOG IN</h2>
+                <div  v-if="showLogin">
+                    <h3><label> Usuario</label></h3>
+                    <input type="text"><br>
+                    <h3><label> Contraseña</label></h3>
+                    <input type="text"><br> <br>
+                    <button type="submit" class="sesiones_btn">Inica sesion</button><br>
                 </div>
             </div>
         </form>
+        
+        
+        <div class="img_ventajas">
+            <img src="images/login.png" alt="Ventajas de ser premium">
+        </div>
+        
+        
         <script>
+            function ajusteCuadrado(){
+                document.logIn.style.backgroundColor='#008000';
+            }
+            
+            
             new Vue({
                 el: '#log',
                 data: {
@@ -88,8 +102,10 @@
                   toogleLogin(){
                     if(this.showLogin){
                       this.showLogin=false
+                        document.logIn.style.color='#008000';
                     }else{
                       this.showLogin=true
+                      document.logIn.style.color='#008000';
                     }
                   },
                   toogleLogup(){
@@ -103,9 +119,8 @@
             })
 
         </script>
-        <?php
-
-        ?>
+        
+        
         <div class="footer clearfix">
 
            <div class="menu_footer">
@@ -118,7 +133,7 @@
 
             <div class="redes_footer">
                 <ul>
-                    <li><a href="#"><i class="fab fa-facebook"></i>Faceboock</a></li>
+                    <li><a href="#"><i class="fab fa-facebook"></i>Facebook</a></li>
                     <li><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
                     <li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
                 </ul>
