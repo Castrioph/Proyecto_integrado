@@ -22,7 +22,7 @@
 <div class="barra">
     <div class="contenedor clearfix">
         <div class="logo">
-            <a href="index.html"><img src="images/YOUFLIXFINALOGO.PNG" alt="Logo Youflix"></a>
+            <a href="index.php"><img src="images/YOUFLIXFINALOGO.PNG" alt="Logo Youflix"></a>
         </div>
 
         <nav class="navegacion-principal">

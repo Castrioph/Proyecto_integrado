@@ -29,7 +29,7 @@ class consultas extends conectar
  return parent::consultar("INSERT INTO usuarios(usuario,password)
      VALUES ('$usuario','$password')");
 }
-public function selecUsu()
+public function selectUsu()
 {
   return parent::consultar("SELECT * FROM usuarios");
 }

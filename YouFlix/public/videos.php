@@ -21,7 +21,7 @@
     }
 
 </style>
-<button class="button"><a href="index.html">Indice</a></button>
+<button class="button"><a href="index.php">Indice</a></button>
 <br><br>
 <?php
 include '../src/model/consultas.php';
