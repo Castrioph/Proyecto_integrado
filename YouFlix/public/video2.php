@@ -7,12 +7,7 @@
   <body>
     <link rel="stylesheet" href="css/flexslider.css">
     <link rel="stylesheet" href="css/font-awesome.css">
-    <style media="screen">
-a{text-decoration: none;}
-.button{background-color:#00CED1;}
-.button:hover{background-color:#F08080;}
 
-    </style>
   <button class="button"><a href="index.html">Indice</a></button>
   <br><br>
     <?php

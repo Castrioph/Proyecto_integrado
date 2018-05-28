@@ -128,16 +128,15 @@
 
     <div class="menu_footer">
         <ul>
-            <li><a href="#"><i class="fas fa-list-ul"></i>Categorias</a></li>
-            <li><a href="#"><i class="fas fa-users"></i>Foro</a></li>
-            <li><a href="#"><i class="fas fa-broadcast-tower"></i>LIVE</a></li>
+            <li><a href="categorias.php"><i class="fas fa-list-ul"></i>Categorias</a></li>
+            <li><a href="../src/model/conexionLDAP.php"><i class="fas fa-users"></i>Active Directory</a></li>
         </ul>
     </div>
 
     <div class="redes_footer">
         <ul>
-            <li><a href="#"><i class="fab fa-facebook"></i>Facebook</a></li>
-            <li><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
+            <li><a href="https://www.facebook.com/you.flix.77"><i class="fab fa-facebook"></i>Facebook</a></li>
+            <li><a href="https://www.instagram.com/youflixnofake/?hl=es"><i class="fab fa-twitter"></i>Twitter</a></li>
             <li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
         </ul>
     </div>
@@ -146,7 +145,7 @@
 
     <div class="descrip_footer">
         <ul>
-            <li><a href="about.php">Sobre Nosotros</a></li>
+            <li><a href="conocenos.php">Sobre Nosotros</a></li>
             <li><a href="terminos.php">Terminos de uso y condiciones</a></li>
         </ul>
     </div>
