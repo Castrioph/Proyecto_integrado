@@ -59,33 +59,12 @@
         $consulta = new consultas();
         $i = 0;
         $resultado = $consulta->consultar("SELECT * FROM videos WHERE id_categorias=1");
-        for ($i; $i < 4; $i++) {
+        for ($i; $i < 6; $i++) {
             $fila = $resultado->fetch_assoc();
             ?>
 
             <li>
-                <img src="<?= $fila["miniaturas"] ?>" alt="">
-            </li>
-            <?php
-            $i++;
-        }
-        ?>
-    </ul>
-</div>
-
-<h2>Erótico-instructivo</h2>
-
-<div class="flexslider">
-    <ul class="slides">
-        <?php
-        $i = 0;
-        $resultado = $consulta->consultar("SELECT * FROM videos WHERE id_categorias=2");
-        for ($i; $i < 4; $i++) {
-            $fila = $resultado->fetch_assoc();
-            ?>
-
-            <li>
-                <img src="<?= $fila["miniaturas"] ?>" alt="">
+                <a href="video.php?id_videos=<?=$fila['id_videos']?>"><img src="<?= $fila["miniaturas"] ?>" alt=""></a>
             </li>
             <?php
             $i++;
@@ -95,18 +74,39 @@
 </div>
 
 <h2>Tecnología</h2>
+
+<div class="flexslider">
+    <ul class="slides"
+        <?php
+        $i = 0;
+        $resultado = $consulta->consultar("SELECT * FROM videos WHERE id_categorias=2");
+        for ($i; $i < 8; $i++) {
+            $fila = $resultado->fetch_assoc();
+            ?>
+
+            <li>
+                <a href="video.php?id_videos=<?=$fila['id_videos']?>"><img src="<?= $fila["miniaturas"] ?>" alt=""></a>
+            </li>
+            <?php
+            $i++;
+        }
+        ?>
+    </ul>
+</div>
+
+<h2>Robótica</h2>
 
 <div class="flexslider">
     <ul class="slides">
         <?php
         $i = 0;
         $resultado = $consulta->consultar("SELECT * FROM videos WHERE id_categorias=3");
-        for ($i; $i < 4; $i++) {
+        for ($i; $i < 6; $i++) {
             $fila = $resultado->fetch_assoc();
             ?>
 
             <li>
-                <img src="<?= $fila["miniaturas"] ?>" alt="">
+                <a href="video.php?id_videos=<?=$fila['id_videos']?>"><img src="<?= $fila["miniaturas"] ?>" alt=""></a>
             </li>
             <?php
             $i++;
@@ -116,19 +116,19 @@
 </div>
 
 
-<h2>Tecnología</h2>
+<h2>Programación</h2>
 
 <div class="flexslider">
     <ul class="slides">
         <?php
         $i = 0;
         $resultado = $consulta->consultar("SELECT * FROM videos WHERE id_categorias=4");
-        for ($i; $i < 4; $i++) {
+        for ($i; $i < 6; $i++) {
             $fila = $resultado->fetch_assoc();
             ?>
 
             <li>
-                <img src="<?= $fila["miniaturas"] ?>" alt="" href="video2.php?id_video=<?= $fila['id_videos'] ?>">
+                <a href="video.php?id_videos=<?=$fila['id_videos']?>"><img src="<?= $fila["miniaturas"] ?>" alt=""></a>
             </li>
             <?php
             $i++;
@@ -136,6 +136,7 @@
         ?>
     </ul>
 </div>
+
 
 <div class="footer clearfix">
 
