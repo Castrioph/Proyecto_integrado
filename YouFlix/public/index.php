@@ -15,13 +15,22 @@
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="js/vue.js"></script>
+
     <script src="js/jquery-3.1.0.min.js"></script>
     <script src="js/jquery.flexslider.js"></script>
     <script src="js/main.js"></script>
 </head>
 <body>
+<?php
+include "../src/model/session.php";
+if(!isset($session)){
+    $session= new session('');
+}else{
+    $session->setUsername($_POST['session']);
+    echo $_POST['session'];
+}
 
+?>
 <div class="barra">
     <div class="contenedor clearfix">
         <div class="logo">
@@ -47,101 +56,55 @@
             <div class="logeado">
                 <a href="login.php">Log IN</a>
                 <a href="login.php">Sign UP</a>
-                <a href="#">Premium</a>
+                <a href="#"><?=$session->getUsername();?></a>
             </div>
         </nav>
     </div><!--.contenedor-->
 </div><!--.barra-->
 
-<form id="log" class="clearfix" method="post" action="registro.php" >
 
-    <div class="registro">
+<div class="flexslider clearfix">
+    <ul class="slides">
 
-        <h2 @click="toogleLogup">REGISTAR USUARIO</h2>
-        <div class="info_registro" v-if="showLogup">
+        <li>
+            <img src="images/1.jpg" alt="">
+            <section class="caption">
+                <div class="textoSlide"><h2>En boca cerrada no entran moscas pero sin p***as como roscast#1</h2></div>
+            </section>
+        </li>
 
-            <h3><label> Usuario</label></h3>
-            <input type="text" name="usuario"><br>
-            <h3><label> Contraseña</label></h3>
-            <input type="text" name="pass"><br>
-            <h3><label> Repetir contraseña</label></h3>
-            <input type="text" name="repass"><br>
-            <h3><label> Correo electrónico</label></h3>
-            <input type="text"><br> <br>
-            <button type="submit" class="sesiones_btn">Registrate</button>
+        <li>
+            <img src="images/2.jpg" alt="">
+            <section class="caption">
+                <div class="textoSlide"><h2>Lorem slider ali baba ar la vibora se va pon el culo acia atrat#2</h2></div>
+            </section>
+        </li>
 
-            <br>
+        <li>
+            <img src="images/3.jpg" alt="">
+            <section class="caption">
+                <div class="textoSlide"><h2>En boca cerrada no entran moscas pero sin p***as como roscast#3</h2></div>
+            </section>
+        </li>
 
-        </div>
-
-    </div>
-
-    <div class="log_in" id="logIn">
-        <h2 @click="toogleLogin">LOG IN</h2>
-        <div v-if="showLogin">
-            <h3><label> Usuario</label></h3>
-            <input type="text" name="usulogin"><br>
-            <h3><label> Contraseña</label></h3>
-            <input type="text"  name="passlogin"><br> <br>
-            <button type="submit" class="sesiones_btn">Inica sesion</button>
-            <br>
-        </div>
-    </div>
-</form>
-
-
-<div class="img_ventajas">
-    <img src="images/login.png" alt="Ventajas de ser premium">
+    </ul>
 </div>
-
-
-<script>
-  function ajusteCuadrado () {
-    document.logIn.style.backgroundColor = '#008000'
-  }
-
-  new Vue({
-    el: '#log',
-    data: {
-      showLogin: false,
-      showLogup: false
-    },
-    methods: {
-      toogleLogin () {
-        if (this.showLogin) {
-          this.showLogin = false
-          document.logIn.style.color = '#008000'
-        } else {
-          this.showLogin = true
-          document.logIn.style.color = '#008000'
-        }
-      },
-      toogleLogup () {
-        if (this.showLogup) {
-          this.showLogup = false
-        } else {
-          this.showLogup = true
-        }
-      }
-    }
-  })
-
-</script>
-
 
 <div class="footer clearfix">
 
     <div class="menu_footer">
         <ul>
-            <li><a href="#"><i class="fas fa-list-ul"></i>Categorias</a></li>
-            <li><a href="../src/model/conexionLDAP.php"><i class="fas fa-users"></i>Active Directory</a></li>
+
+            <li><a href="categorias.php"><i class="fas fa-list-ul"></i>Categorias</a></li>
+
+            <li><a href="../src/model/conexionLDAP.php"><i class="fas fa-broadcast-tower"></i>Active Directory</a></li>
         </ul>
     </div>
 
     <div class="redes_footer">
         <ul>
-            <li><a href="#"><i class="fab fa-facebook"></i>Facebook</a></li>
-            <li><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
+            <li><a href="https://www.facebook.com/you.flix.77"><i class="fab fa-facebook"></i>Facebook</a></li>
+            <li><a href="https://www.instagram.com/youflixnofake/?hl=es"><i class="fab fa-twitter"></i>Twitter</a></li>
             <li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
         </ul>
     </div>
@@ -155,5 +118,10 @@
         </ul>
     </div>
 </div>
+<!-- <i class="far fa-copyright"></i> para el copy
+
+<i class="fas fa-user-circle"></i> para el usuario en foros
+-->
+
 </body>
 </html>
