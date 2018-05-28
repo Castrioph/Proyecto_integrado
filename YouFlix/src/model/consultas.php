@@ -24,5 +24,14 @@ class consultas extends conectar
  {
    return parent::consultar("SELECT * FROM comentarios WHERE id_video=$id_video");
  }
+ public function insertUsu($usuario, $password)
+{
+ return parent::consultar("INSERT INTO usuarios(usuario,password)
+     VALUES ('$usuario','$password')");
+}
+public function selecUsu()
+{
+  return parent::consultar("SELECT * FROM usuarios");
+}
 }
 ?>

@@ -53,31 +53,36 @@
     </div><!--.contenedor-->
 </div><!--.barra-->
 
-
-<form id="log" class="clearfix" method="post">
+<form id="log" class="clearfix" method="post" action="registro.php" >
 
     <div class="registro">
+
         <h2 @click="toogleLogup">REGISTAR USUARIO</h2>
         <div class="info_registro" v-if="showLogup">
+
             <h3><label> Usuario</label></h3>
-            <input type="text"><br>
+            <input type="text" name="usuario"><br>
             <h3><label> Contraseña</label></h3>
-            <input type="text"><br>
+            <input type="text" name="pass"><br>
             <h3><label> Repetir contraseña</label></h3>
-            <input type="text"><br>
+            <input type="text" name="repass"><br>
             <h3><label> Correo electrónico</label></h3>
             <input type="text"><br> <br>
             <button type="submit" class="sesiones_btn">Registrate</button>
+
             <br>
+
         </div>
+
     </div>
+
     <div class="log_in" id="logIn">
         <h2 @click="toogleLogin">LOG IN</h2>
         <div v-if="showLogin">
             <h3><label> Usuario</label></h3>
-            <input type="text"><br>
+            <input type="text" name="usulogin"><br>
             <h3><label> Contraseña</label></h3>
-            <input type="text"><br> <br>
+            <input type="text"  name="passlogin"><br> <br>
             <button type="submit" class="sesiones_btn">Inica sesion</button>
             <br>
         </div>
@@ -128,15 +133,16 @@
 
     <div class="menu_footer">
         <ul>
-            <li><a href="categorias.php"><i class="fas fa-list-ul"></i>Categorias</a></li>
-            <li><a href="../src/model/conexionLDAP.php"><i class="fas fa-users"></i>Active Directory</a></li>
+            <li><a href="#"><i class="fas fa-list-ul"></i>Categorias</a></li>
+            <li><a href="#"><i class="fas fa-users"></i>Foro</a></li>
+            <li><a href="#"><i class="fas fa-broadcast-tower"></i>LIVE</a></li>
         </ul>
     </div>
 
     <div class="redes_footer">
         <ul>
-            <li><a href="https://www.facebook.com/you.flix.77"><i class="fab fa-facebook"></i>Facebook</a></li>
-            <li><a href="https://www.instagram.com/youflixnofake/?hl=es"><i class="fab fa-twitter"></i>Twitter</a></li>
+            <li><a href="#"><i class="fab fa-facebook"></i>Facebook</a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
             <li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
         </ul>
     </div>
@@ -145,11 +151,10 @@
 
     <div class="descrip_footer">
         <ul>
-            <li><a href="conocenos.php">Sobre Nosotros</a></li>
+            <li><a href="about.php">Sobre Nosotros</a></li>
             <li><a href="terminos.php">Terminos de uso y condiciones</a></li>
         </ul>
     </div>
 </div>
 </body>
 </html>
-
