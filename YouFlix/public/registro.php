@@ -38,7 +38,7 @@
                 echo "<h1 class='titulo_conexion'>TE HAS CONECTADO BIEN</h1>";
                 $condition = true;
                 ?>
-            <form class="form_conexion" action="index.php?session=<?= $usulogin ?>" method="post">
+            <form class="form_conexion" action="../src/model/session.php?usuario=<?= $usulogin ?>" method="post">
                     <button class="sesiones_btn">VOLVER AL INDEX</button>
                 </form><?php
 
