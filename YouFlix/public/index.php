@@ -126,8 +126,8 @@ session_start();
     <div class="redes_footer">
         <ul>
             <li><a href="https://www.facebook.com/you.flix.77"><i class="fab fa-facebook"></i>Facebook</a></li>
-            <li><a href="https://www.instagram.com/youflixnofake/?hl=es"><i class="fab fa-twitter"></i>Twitter</a></li>
-            <li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
+            <li><a href="https://www.instagram.com/youflixnofake/?hl=es"><i class="fab fa-instagram"></i>Instagram</a></li>
         </ul>
     </div>
 
