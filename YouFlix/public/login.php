@@ -68,9 +68,9 @@ session_start();
             <h3><label> Usuario</label></h3>
             <input type="text" name="usuario"><br>
             <h3><label> Contraseña</label></h3>
-            <input type="text" name="pass"><br>
+            <input type="password" name="pass"><br>
             <h3><label> Repetir contraseña</label></h3>
-            <input type="text" name="repass"><br>
+            <input type="password" name="repass"><br>
             <h3><label> Correo electrónico</label></h3>
             <input type="text"><br> <br>
             <button type="submit" class="sesiones_btn">Registrate</button>
@@ -87,7 +87,7 @@ session_start();
             <h3><label> Usuario</label></h3>
             <input type="text" name="usulogin"><br>
             <h3><label> Contraseña</label></h3>
-            <input type="text" name="passlogin"><br> <br>
+            <input type="password" name="passlogin"><br> <br>
             <button type="submit" class="sesiones_btn">Inica sesion</button>
             <br>
         </div>
@@ -145,9 +145,9 @@ session_start();
 
     <div class="redes_footer">
         <ul>
-            <li><a href="#"><i class="fab fa-facebook"></i>Facebook</a></li>
+            <li><a href="https://www.facebook.com/you.flix.77"><i class="fab fa-facebook"></i>Facebook</a></li>
             <li><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
-            <li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
+            <li><a href="https://www.instagram.com/youflixnofake/?hl=es"><i class="fab fa-instagram"></i>Instagram</a></li>
         </ul>
     </div>
 
