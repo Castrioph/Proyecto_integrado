@@ -28,7 +28,7 @@
 <body>
 <?php
 error_reporting(0);
-
+session_start();
 ?>
 	<div class="barra">
         <div class="contenedor clearfix">
@@ -39,7 +39,7 @@ error_reporting(0);
             <nav class="navegacion-principal">
                 <div class="categorias">
                     <a href="categorias.php">Categorías</a>
-                    <a href="live.html">Active Directory</a>
+                    <a href="../src/model/conexionLDAP.php">Active Directory</a>
 
                 </div>
 
@@ -55,6 +55,7 @@ error_reporting(0);
                 <div class="logeado">
                     <a href="login.php">Log IN</a>
                     <a href="login.php">Sign UP</a>
+                    <a href="../src/model/sessiondestroy.php">Log out</a>
                     <a href="#"><?= $_SESSION['usuario'] ?></a>
                 </div>
             </nav>

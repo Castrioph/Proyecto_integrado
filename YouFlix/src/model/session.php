@@ -9,7 +9,7 @@
 session_start();
 $_SESSION['usuario']=$_GET['usuario'];
 var_dump($_SESSION);
-header("Location:../../public/index.php?prop=true");
+header("Location:../../public/index.php");
 
 
 ?>

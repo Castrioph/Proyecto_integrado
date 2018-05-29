@@ -1,9 +1,7 @@
 <?php
-error_reporting(0);
-$prop = $_GET['prop'];
-if ($prop == "true") {
-    session_start();
-}
+include "../src/model/consultas.php";
+//error_reporting(0);
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -64,25 +62,50 @@ if ($prop == "true") {
 
 <div class="flexslider clearfix">
     <ul class="slides">
-
+        <?php
+        $consulta = new consultas();
+        $resultado = $consulta->consultar("SELECT * FROM videos WHERE id_categorias=1");
+        $fila = $resultado->fetch_assoc();
+        ?>
         <li>
-            <img src="images/1.jpg" alt="">
+            <a href="video.php?id_videos=<?= $fila['id_videos'] ?>"><img src="<?= $fila["miniaturas"] ?>" alt=""></a>
             <section class="caption">
-                <div class="textoSlide"><h2>En boca cerrada no entran moscas pero sin p***as como roscast#1</h2></div>
+                <div class="textoSlide"><h2><?=$fila['titulo']?></h2></div>
             </section>
         </li>
 
+        <?php
+        $resultado = $consulta->consultar("SELECT * FROM videos WHERE id_categorias=2");
+        $fila = $resultado->fetch_assoc();
+        ?>
         <li>
-            <img src="images/2.jpg" alt="">
+            <a href="video.php?id_videos=<?= $fila['id_videos'] ?>"><img src="<?= $fila["miniaturas"] ?>" alt=""></a>
             <section class="caption">
-                <div class="textoSlide"><h2>Lorem slider ali baba ar la vibora se va pon el culo acia atrat#2</h2></div>
+                <div class="textoSlide"><h2><?=$fila['titulo']?></h2></div>
             </section>
         </li>
 
+        <?php
+        $resultado = $consulta->consultar("SELECT * FROM videos WHERE id_categorias=3");
+        $fila = $resultado->fetch_assoc();
+        ?>
+
         <li>
-            <img src="images/3.jpg" alt="">
+            <a href="video.php?id_videos=<?= $fila['id_videos'] ?>"><img src="<?= $fila["miniaturas"] ?>" alt=""></a>
             <section class="caption">
-                <div class="textoSlide"><h2>En boca cerrada no entran moscas pero sin p***as como roscast#3</h2></div>
+                <div class="textoSlide"><h2><?=$fila['titulo']?></h2></div>
+            </section>
+        </li>
+
+            <?php
+            $resultado = $consulta->consultar("SELECT * FROM videos WHERE id_categorias=4");
+            $fila = $resultado->fetch_assoc();
+            $fila = $resultado->fetch_assoc();
+            ?>
+        <li>
+            <a href="video.php?id_videos=<?= $fila['id_videos'] ?>"><img src="<?= $fila["miniaturas"] ?>" alt=""></a>
+            <section class="caption">
+                <div class="textoSlide"><h2><?=$fila['titulo']?></h2></div>
             </section>
         </li>
 

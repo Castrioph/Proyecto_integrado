@@ -11,7 +11,7 @@ a{text-decoration: none;}
 .button:hover{background-color:#F08080;}
 
     </style>
-  <button class="button"><a href="index.html">Indice</a></button>
+  <button class="button"><a href="index.php">Indice</a></button>
     <button class="Videos"><a href="videos.php">Videos</a></button>
 <?php
 include '../src/model/consultas.php';

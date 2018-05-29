@@ -19,13 +19,14 @@
 </head>
 <body>
 <?php
+error_reporting(0);
 session_start();
 ?>
 
     <div class="barra">
         <div class="contenedor clearfix">
             <div class="logo">
-                <a href="index.html"><img src="images/YOUFLIXFINALOGO.PNG" alt="Logo Youflix"></a>
+                <a href="index.php"><img src="images/YOUFLIXFINALOGO.PNG" alt="Logo Youflix"></a>
             </div>
 
             <nav class="navegacion-principal">
@@ -46,6 +47,7 @@ session_start();
                 <div class="logeado">
                     <a href="login.php">Log IN</a>
                     <a href="login.php">Sign UP</a>
+                    <a href="../src/model/sessiondestroy.php">Log out</a>
                     <a href="#"><?= $_SESSION['usuario'] ?></a>
                 </div>
             </nav>
@@ -97,8 +99,8 @@ session_start();
 
         <div class="redes_footer">
             <ul>
-                <li><a href="#"><i class="fab fa-facebook"></i>Facebook</a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
+                <li><a href="https://www.facebook.com/you.flix.77"><i class="fab fa-facebook"></i>Facebook</a></li>
+                <li><a href="#https://www.instagram.com/youflixnofake/?hl=es"><i class="fab fa-twitter"></i>Twitter</a></li>
                 <li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
             </ul>
         </div>

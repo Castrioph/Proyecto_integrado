@@ -7,7 +7,7 @@
   <body>
   <?php
   error_reporting(0);
-
+  session_start();
   ?>
     <link rel="stylesheet" href="css/flexslider.css">
     <link rel="stylesheet" href="css/font-awesome.css">

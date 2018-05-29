@@ -23,7 +23,7 @@
 <body>
 <?php
 error_reporting(0);
-
+session_start();
 ?>
 
 <div class="barra">
@@ -51,6 +51,7 @@ error_reporting(0);
             <div class="logeado">
                 <a href="login.php">Log IN</a>
                 <a href="login.php">Sign UP</a>
+                <a href="../src/model/sessiondestroy.php">Log out</a>
                 <a href="#"><?= $_SESSION['usuario'] ?></a>
             </div>
         </nav>
