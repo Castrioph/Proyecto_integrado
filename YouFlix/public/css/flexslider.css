@@ -532,7 +532,36 @@ div.invitado p{
     .contenedor_video h3{
         margin-bottom: 3%;
     }
+    
+    
+/*   Categorias   */
 
+    
+/*  Conexion   */
+    
+   .tabla1{
+    border: solid 1px;
+    border-collapse: collapse;
+    width: 50%;
+    margin: 20%;
+}
+
+.tabla1{
+    box-shadow: 0 4px 15px 0 rgba(0,0,0,0.4), 0 4px 20px 0 rgba(0,0,0,0.25);
+} 
+    
+    .tabla1{
+    text-align: center;
+}
+
+    .titulo_conexion{
+        text-align: center;
+    }
+    
+
+   
+    
+    
 /*    Footer   */
 
     
