@@ -1,3 +1,10 @@
+<?php
+error_reporting(0);
+$prop = $_GET['prop'];
+if ($prop == "true") {
+    session_start();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,16 +28,7 @@
     <script src="js/main.js"></script>
 </head>
 <body>
-<?php
-include "../src/model/session.php";
-if(!isset($session)){
-    $session= new session('');
-}else{
-    $session->setUsername($_POST['session']);
-    echo $_POST['session'];
-}
 
-?>
 <div class="barra">
     <div class="contenedor clearfix">
         <div class="logo">
@@ -56,7 +54,8 @@ if(!isset($session)){
             <div class="logeado">
                 <a href="login.php">Log IN</a>
                 <a href="login.php">Sign UP</a>
-                <a href="#"><?=$session->getUsername();?></a>
+                <a href="../src/model/sessiondestroy.php">Log out</a>
+                <a href="#"><?= $_SESSION['usuario'] ?></a>
             </div>
         </nav>
     </div><!--.contenedor-->

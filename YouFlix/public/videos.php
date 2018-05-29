@@ -18,6 +18,9 @@
 	<script src="js/main.js"></script>
 </head>
 <body>
+<?php
+session_start();
+?>
 
     <div class="barra">
         <div class="contenedor clearfix">
@@ -43,7 +46,7 @@
                 <div class="logeado">
                     <a href="login.php">Log IN</a>
                     <a href="login.php">Sign UP</a>
-                    <a href="#">Premium</a>
+                    <a href="#"><?= $_SESSION['usuario'] ?></a>
                 </div>
             </nav>
         </div><!--.contenedor-->

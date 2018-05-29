@@ -21,6 +21,10 @@
     <script src="js/main.js"></script>
 </head>
 <body>
+<?php
+error_reporting(0);
+
+?>
 
 <div class="barra">
     <div class="contenedor clearfix">
@@ -47,13 +51,13 @@
             <div class="logeado">
                 <a href="login.php">Log IN</a>
                 <a href="login.php">Sign UP</a>
-                <a href="#">Premium</a>
+                <a href="#"><?= $_SESSION['usuario'] ?></a>
             </div>
         </nav>
     </div><!--.contenedor-->
 </div><!--.barra-->
 
-<form id="log" class="clearfix" method="post" action="registro.php" >
+<form id="log" class="clearfix" method="post" action="registro.php">
 
     <div class="registro">
 
@@ -82,7 +86,7 @@
             <h3><label> Usuario</label></h3>
             <input type="text" name="usulogin"><br>
             <h3><label> Contraseña</label></h3>
-            <input type="text"  name="passlogin"><br> <br>
+            <input type="text" name="passlogin"><br> <br>
             <button type="submit" class="sesiones_btn">Inica sesion</button>
             <br>
         </div>

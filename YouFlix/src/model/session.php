@@ -6,21 +6,10 @@
 * Time: 0:43
 */
 
-/*Probando a crear una sesion*/
+session_start();
+$_SESSION['usuario']=$_GET['usuario'];
+var_dump($_SESSION);
+header("Location:../../public/index.php?prop=true");
 
-class session{
-    private $username ="";
 
-    function __construct($username)
-    {
-        $this->username = $username;
-    }
-
-    function getUsername(){
-        return $this->username;
-    }
-
-    function setUsername($username){
-        $this->username = $username;
-    }
-}
+?>

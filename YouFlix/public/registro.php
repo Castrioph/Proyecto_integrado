@@ -19,7 +19,7 @@ if ($_POST['usulogin'] != null) {
             echo "<h1>TE HAS CONECTADO BIEN</h1>";
             $condition = true;
             ?>
-        <form class="" action="index.php?session=<?= $usulogin ?>" method="post">
+        <form class="" action="../src/model/session.php?usuario=<?=$usulogin?>" method="post">
                 <button>VOLVER AL INDEX</button>
             </form><?php
 
